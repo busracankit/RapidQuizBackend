@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     # Üçüncü parti
     "rest_framework",
     "drf_spectacular",
+    "drf_spectacular_sidecar",
     "corsheaders",
     # Proje
     "apps.quiz",
@@ -103,18 +104,32 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"],
     "UNAUTHENTICATED_USER": None,
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "EXCEPTION_HANDLER": "config.api.api_exception_handler",
+    "DEFAULT_THROTTLE_CLASSES": ["rest_framework.throttling.ScopedRateThrottle"],
     "DEFAULT_THROTTLE_RATES": {
-        "session_create": "30/min",
-        "answer": "120/min",
-        "score": "10/min",
+        "session_create": env("THROTTLE_SESSION_CREATE", default="30/min"),
+        "answer": env("THROTTLE_ANSWER", default="120/min"),
+        "score": env("THROTTLE_SCORE", default="10/min"),
+        "read": env("THROTTLE_READ", default="300/min"),
     },
+    # İstemci IP'si için güvenilen proxy sayısı (X-Forwarded-For). Yerelde 0 = REMOTE_ADDR.
+    "NUM_PROXIES": env.int("DRF_NUM_PROXIES", default=0),
 }
+
+# Throttle sayaçları. Varsayılan LocMem süreç başınadır (gunicorn worker sayısı kadar
+# gevşer); çok instance'a çıkılırsa paylaşılan bir cache (ör. Redis) tanımlanmalı.
+CACHES = {"default": env.cache("CACHE_URL", default="locmemcache://")}
 
 SPECTACULAR_SETTINGS = {
     "TITLE": "Rapid Quiz API",
     "DESCRIPTION": "Web ve mobil istemciler için ortak Rapid Quiz REST API'si.",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
+    "SWAGGER_UI_DIST": "SIDECAR",
+    "SWAGGER_UI_FAVICON_HREF": "SIDECAR",
+    "REDOC_DIST": "SIDECAR",
+    "COMPONENT_SPLIT_REQUEST": True,
+    "SCHEMA_PATH_PREFIX": r"/api/v[0-9]+",
 }
 
 # --- Oyun kuralları ---

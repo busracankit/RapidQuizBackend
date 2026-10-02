@@ -7,7 +7,7 @@ Rapid Quiz'in Django + DRF REST API'si. Web (Vue) ve mobil istemciler aynı `/ap
 
 ## Teknoloji
 
-Python 3.14 · Django 6.1.1 · DRF 3.18.1 · PostgreSQL 18 · psycopg 3 · drf-spectacular · django-cors-headers ·
+Python 3.14 · Django 6.1.1 · DRF 3.18.1 · PostgreSQL 18 · psycopg 3 · drf-spectacular (+sidecar) · django-cors-headers ·
 django-environ · gunicorn · WhiteNoise · pytest-django · ruff · uv. Sürümler `pyproject.toml` + `uv.lock` ile sabit.
 
 ## Komutlar
@@ -22,7 +22,9 @@ uv run manage.py runserver              # http://localhost:8000  (admin: /admin/
 uv run pytest                           # testler (PostgreSQL gerekir, config.settings.test)
 uv run pytest --cov                     # kapsama
 uv run ruff format . && uv run ruff check .
+uv run manage.py load_questions [--check] [--deactivate-missing] [dosya.json ...]
 uv run manage.py cleanup_sessions [--dry-run]
+uv run manage.py spectacular --validate --fail-on-warn --file schema.yml   # OpenAPI
 ```
 
 ## Yapı
@@ -30,9 +32,16 @@ uv run manage.py cleanup_sessions [--dry-run]
 ```
 config/settings/{base,dev,prod,test}.py   # DJANGO_SETTINGS_MODULE; manage.py → dev, wsgi → prod, pytest → test
 config/middleware.py                      # HealthCheckMiddleware: /api/v1/health/ (ALLOWED_HOSTS'tan önce)
-apps/quiz/        Category, Question, Choice, QuizSession, SessionQuestion + admin + komutlar
-apps/leaderboard/ LeaderboardEntry (+ ranked(), top_for_category())
-apps/conftest.py  ortak fixture'lar: category, question, quiz_session, make_question(), make_session()
+config/api.py                             # sabit hata formatı (EXCEPTION_HANDLER) + /api/ altında JSON 404
+config/urls.py                            # /api/v1/ rotaları, /api/schema/, /api/docs/ (Swagger, sidecar ile yerel)
+apps/quiz/services.py      oyun kuralları: soru seçimi, oturum, cevap, süre, puan  ← iş kuralları BURADA
+apps/quiz/exceptions.py    QuizError alt sınıfları (code + HTTP status)
+apps/quiz/loaders.py       soru JSON doğrulama/yükleme (load_questions)
+apps/quiz/serializers.py   istek/yanıt şemaları + *_payload() gövde üreticileri
+apps/leaderboard/services.py  isim temizleme, skor kaydı, sıralama; profanity.py küfür filtresi
+data/questions/<slug>.json    soru verisi (correct + 3 wrong, difficulty 1–3)
+apps/conftest.py  fixture'lar: category, full_category, question, quiz_session; make_question(), fill_category(), make_session()
+apps/api_tests/   uçtan uca API testleri
 ```
 
 ## Kurallar
@@ -57,12 +66,41 @@ apps/conftest.py  ortak fixture'lar: category, question, quiz_session, make_ques
   Admin, kayıt sırasını "önce silinenler → is_correct=False → doğru şık" yapar; tek-form kısıt kontrolü kapalıdır,
   kural formset seviyesinde (tam 4 şık, tam 1 doğru, farklı metinler) doğrulanır.
 - **Sorular:** Faz 1'de kategori başına 20 soru (8 kolay / 8 orta / 4 zor); soru ≤120, şık ≤40 karakter.
+  Zorlukta eksik varsa oturum diğer zorluklardan tamamlar; toplam < 20 ise 409 `not_enough_questions`.
+- **Şık kimlikleri (dokümandan sapma):** API'de `choices[].id`, `choice_id`, `correct_choice_id` oturuma özel
+  **1–4** değerleridir (`SessionQuestion.choice_order` sırası + 1). DB id'leri gönderilmez, çünkü yükleyici doğru
+  şıkkı ilk oluşturduğundan en küçük id doğru cevabı ele verirdi.
+- **Süresi dolan sorular:** Sunucu, istemcinin yapacağını taklit eder: `served_at + 5750 ms` geçen soru
+  "süre doldu" (5000 ms) kaydedilir, sonraki sorunun `served_at`'i `önceki served_at + 5000 + 800` olur. Bu her
+  oturum erişiminde (`run_locked`) zincirleme uygulanır; uzun ayrılıkta oyun 0 puanla tamamlanır.
+- **Zaman aşımı:** `started_at`'ten 30 dk sonra erişilen `in_progress` oturum `expired` yapılır → 410.
+- **Erken cevap:** `served_at`'ten önce gelen cevap 0 ms sayılır (dürüst istemci soruyu `starts_in_ms` sonra gösterir).
+- **Throttling:** `ScopedRateThrottle` (session_create 30/dk, answer 120/dk, score 10/dk, read 300/dk), IP bazlı;
+  prod'da `NUM_PROXIES=1`. Cache varsayılan LocMem (worker başına) — çok instance'ta Redis gerekir.
+
+## API v1 sözleşmesi (özet; tam şema `/api/schema/`)
+
+| Metot | Yol | Başarı | Önemli hatalar |
+| --- | --- | --- | --- |
+| GET | `/api/v1/categories/` | 200 liste | — |
+| POST | `/api/v1/sessions/` `{category, client_type}` | 201 `{session_id, session_token, category, total_questions, time_limit_ms, question}` | 400, 404 `category_not_found`, 409 `not_enough_questions`, 429 |
+| GET | `/api/v1/sessions/{id}/current/` | 200 `{status, score, answered_count, finished, question\|null, answers[]}` | 403 `invalid_session_token`, 404, 410 `session_expired` |
+| POST | `/api/v1/sessions/{id}/answers/` `{question_id, choice_id\|null}` | 200 `{is_correct, timed_out, correct_choice_id, selected_choice_id, points, score, correct_count, answered_count, finished, next_question\|null}` | 400, 403, 409 `question_mismatch`, 410 |
+| GET | `/api/v1/sessions/{id}/result/` | 200 `{score, max_score, correct_count, total_time_ms, answers[], score_saved, player_name, rank}` | 409 `session_not_finished` |
+| POST | `/api/v1/sessions/{id}/score/` `{player_name}` | 201 `{entry, rank, in_top, leaderboard}` | 400 `invalid_player_name`, 409 `score_already_saved`/`session_not_finished` |
+| GET | `/api/v1/leaderboard/?category=slug` | 200 `{category, entries[{id, rank, player_name, score, correct_count, total_time_ms, created_at}]}` | 400, 404 |
+
+Soru nesnesi: `{index, id, text, difficulty, choices[{id: 1–4, text}], served_at, starts_in_ms, remaining_ms}`.
+İstemci `starts_in_ms` bekler (3-2-1 / geri bildirim), sonra `remaining_ms`'den geri sayar; süre dolunca `choice_id: null` gönderir.
+Hata: `{"error": {"code", "message", "details"?}}`. Oturum header'ı: `X-Session-Token`.
 
 ## Yol haritası durumu (Faz 1)
 
 - [x] Proje kurulumu (uv, bölünmüş ayarlar, docker-compose, Dockerfile, `.do/app.yaml`)
 - [x] Modeller, migration'lar, admin (inline şıklar + doğrulama), `cleanup_sessions` komutu
-- [ ] `load_questions` komutu + 5×20 soruluk JSON (`data/questions/`)
-- [ ] Servis katmanı (oturum açma, cevap, süre toleransı, puan) — önce testler
-- [ ] v1 endpointleri, hata formatı, throttling, CORS
-- [ ] drf-spectacular şeması; Swagger UI statiklerini kendimiz sunmak için `drf-spectacular-sidecar` değerlendirilecek
+- [x] `load_questions` komutu + 5×20 soruluk JSON (`data/questions/`)
+- [x] Servis katmanı (oturum açma, cevap, süre toleransı, puan)
+- [x] v1 endpointleri, hata formatı, throttling, CORS
+- [x] drf-spectacular şeması + Swagger UI (`drf-spectacular-sidecar` ile CDN'siz)
+
+Faz 1 tamam. Sırada Faz 2 (frontend, `../RapidQuizFrontend`). Faz 3'te: CI, deploy, soruları 60'a çıkarma.

@@ -5,6 +5,9 @@ from .base import DATABASES, env
 
 DEBUG = False
 
+# DigitalOcean yük dengeleyicisi X-Forwarded-For'a istemci IP'sini ekler (throttling için).
+REST_FRAMEWORK["NUM_PROXIES"] = env.int("DRF_NUM_PROXIES", default=1)  # noqa: F405
+
 # HTTPS'i DigitalOcean yük dengeleyicisi sonlandırır.
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SECURE_SSL_REDIRECT = False  # yönlendirmeyi platform yapar; health check bozulmasın

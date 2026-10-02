@@ -16,3 +16,4 @@ STORAGES = {
 }
 DATABASES["default"]["CONN_MAX_AGE"] = 0  # noqa: F405
 LOGGING = {"version": 1, "disable_existing_loggers": False}
+CACHES = {"default": {"BACKEND": "django.core.cache.backends.locmem.LocMemCache"}}

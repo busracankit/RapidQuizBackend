@@ -28,3 +28,11 @@ def test_other_paths_still_validate_host(client):
 def test_swagger_and_schema_available(client):
     assert client.get("/api/schema/").status_code == 200
     assert client.get("/api/docs/").status_code == 200
+
+
+def test_openapi_schema_has_no_warnings(tmp_path):
+    from django.core.management import call_command
+
+    out = tmp_path / "schema.yml"
+    call_command("spectacular", "--validate", "--fail-on-warn", "--file", str(out))
+    assert "/api/v1/sessions/{session_id}/answers/" in out.read_text()

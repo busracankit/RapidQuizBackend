@@ -5,6 +5,16 @@ import pytest
 from apps.quiz.models import Category, Choice, Question, QuizSession
 
 
+@pytest.fixture(autouse=True)
+def _clear_cache():
+    """Throttle sayaçları testler arasında taşınmasın."""
+    from django.core.cache import cache
+
+    cache.clear()
+    yield
+    cache.clear()
+
+
 @pytest.fixture
 def category(db):
     # 0002_seed_categories migration'ı 5 kategoriyi oluşturur.
