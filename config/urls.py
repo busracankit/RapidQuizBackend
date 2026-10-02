@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, re_path
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 
 from apps.leaderboard.views import LeaderboardView, SessionScoreView
@@ -10,6 +10,7 @@ from apps.quiz.views import (
     SessionCurrentView,
     SessionResultView,
 )
+from config.api import api_not_found
 from config.views import HealthView
 
 admin.site.site_header = "Rapid Quiz Yönetimi"
@@ -34,6 +35,8 @@ urlpatterns = [
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
     path("api/v1/", include((api_v1, "v1"))),
+    # DEBUG=True iken handler404 devreye girmez; /api/ altında her durumda JSON 404 dönsün.
+    re_path(r"^api/", api_not_found),
 ]
 
 handler404 = "config.api.api_not_found"

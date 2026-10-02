@@ -342,8 +342,11 @@ class TestLeaderboard:
 
 
 class TestInfrastructure:
-    def test_unknown_api_url_is_json_404(self, api):
+    @pytest.mark.parametrize("debug", [False, True])
+    def test_unknown_api_url_is_json_404(self, api, settings, debug):
+        settings.DEBUG = debug
         assert_error(api.get("/api/v1/yok/"), 404, "not_found")
+        assert_error(api.post("/api/v2/sessions/", {}, format="json"), 404, "not_found")
 
     def test_cors_allows_frontend_and_session_header(self, api, settings):
         settings.CORS_ALLOWED_ORIGINS = ["https://rapidquiz.app"]
