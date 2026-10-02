@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: rapidquiz
+      POSTGRES_USER: rapidquiz
+      POSTGRES_PASSWORD: rapidquiz
+    ports: ["5432:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql   # PG 18 imajında veri dizini bu klasörün altında
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rapidquiz"]
+      interval: 5s
+      retries: 10
+  api:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DJANGO_SETTINGS_MODULE: config.settings.dev
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-local-dev-secret}
+      DATABASE_URL: postgres://rapidquiz:rapidquiz@db:5432/rapidquiz
+    ports: ["8000:8080"]
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  pgdata:

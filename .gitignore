@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Env
+.env
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
+
+# Django
+staticfiles/
+*.sqlite3
+
+# Geçici
+_to_delete/
