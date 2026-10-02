@@ -5,6 +5,11 @@ Rapid Quiz'in Django + DRF REST API'si. Web (Vue) ve mobil istemciler aynı `/ap
 - **Proje dokümanı (tek doğruluk kaynağı):** `docs/rapid-quiz-proje-dokumani.md`
 - **Frontend reposu:** `../RapidQuizFrontend` (Vue 3 + Vite + TS). İki repo arasındaki tek sözleşme OpenAPI şemasıdır (`/api/schema/`).
 
+## Git
+
+- Remote: `origin` → https://github.com/busracankit/RapidQuizBackend.git (frontend: `RapidQuizFrontend.git`), dal `main`.
+- Faz 3'e kadar yalnızca yerel commit; push Faz 3 ile başlar (DigitalOcean `main`'e push'ta deploy eder).
+
 ## Teknoloji
 
 Python 3.14 · Django 6.1.1 · DRF 3.18.1 · PostgreSQL 18 · psycopg 3 · drf-spectacular (+sidecar) · django-cors-headers ·
