@@ -121,6 +121,8 @@ SPECTACULAR_SETTINGS = {
 QUIZ_TIME_LIMIT_MS = env.int("QUIZ_TIME_LIMIT_MS", default=5000)
 QUIZ_LATENCY_GRACE_MS = env.int("QUIZ_LATENCY_GRACE_MS", default=750)
 QUIZ_QUESTIONS_PER_SESSION = env.int("QUIZ_QUESTIONS_PER_SESSION", default=20)
+# Oturum başına zorluk dağılımı (kolay/orta/zor); toplamı QUIZ_QUESTIONS_PER_SESSION olmalı.
+QUIZ_DIFFICULTY_MIX = {1: 8, 2: 8, 3: 4}
 # Sunucu, istemcinin göstereceği bekleme kadar served_at'i ileri tarihler.
 QUIZ_READY_COUNTDOWN_MS = env.int("QUIZ_READY_COUNTDOWN_MS", default=3000)
 QUIZ_FEEDBACK_MS = env.int("QUIZ_FEEDBACK_MS", default=800)

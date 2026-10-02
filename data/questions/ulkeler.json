@@ -1,0 +1,232 @@
+{
+  "category": {
+    "slug": "ulkeler",
+    "name": "Ülkeler",
+    "description": "Başkentler, bayraklar, coğrafya ve kültür.",
+    "icon": "globe",
+    "color": "#10B981",
+    "order": 4
+  },
+  "questions": [
+    {
+      "text": "Japonya'nın başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Tokyo",
+      "wrong": [
+        "Kyoto",
+        "Osaka",
+        "Seul"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Eyfel Kulesi hangi ülkededir?",
+      "difficulty": 1,
+      "correct": "Fransa",
+      "wrong": [
+        "İtalya",
+        "Belçika",
+        "İspanya"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yüzölçümü bakımından dünyanın en büyük ülkesi hangisidir?",
+      "difficulty": 1,
+      "correct": "Rusya",
+      "wrong": [
+        "Kanada",
+        "Çin",
+        "ABD"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İtalya'nın başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Roma",
+      "wrong": [
+        "Milano",
+        "Napoli",
+        "Venedik"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Giza piramitleri hangi ülkededir?",
+      "difficulty": 1,
+      "correct": "Mısır",
+      "wrong": [
+        "Sudan",
+        "Ürdün",
+        "Fas"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bayrağında akçaağaç yaprağı bulunan ülke hangisidir?",
+      "difficulty": 1,
+      "correct": "Kanada",
+      "wrong": [
+        "Avustralya",
+        "İsviçre",
+        "Yeni Zelanda"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Almanya'nın başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Berlin",
+      "wrong": [
+        "Münih",
+        "Hamburg",
+        "Frankfurt"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Samba ve karnavalıyla ünlü, Güney Amerika'nın en büyük ülkesi hangisidir?",
+      "difficulty": 1,
+      "correct": "Brezilya",
+      "wrong": [
+        "Arjantin",
+        "Kolombiya",
+        "Peru"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Avustralya'nın başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Kanberra",
+      "wrong": [
+        "Sidney",
+        "Melbourne",
+        "Perth"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kanada'nın başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Ottawa",
+      "wrong": [
+        "Toronto",
+        "Vancouver",
+        "Montreal"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "2023'ten bu yana dünyanın en kalabalık ülkesi hangisidir?",
+      "difficulty": 2,
+      "correct": "Hindistan",
+      "wrong": [
+        "Çin",
+        "ABD",
+        "Endonezya"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Para birimi yen olan ülke hangisidir?",
+      "difficulty": 2,
+      "correct": "Japonya",
+      "wrong": [
+        "Çin",
+        "Güney Kore",
+        "Tayland"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İsviçre'nin başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Bern",
+      "wrong": [
+        "Zürih",
+        "Cenevre",
+        "Basel"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kilimanjaro Dağı hangi ülkededir?",
+      "difficulty": 2,
+      "correct": "Tanzanya",
+      "wrong": [
+        "Kenya",
+        "Uganda",
+        "Etiyopya"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yüzölçümü bakımından dünyanın en küçük ülkesi hangisidir?",
+      "difficulty": 2,
+      "correct": "Vatikan",
+      "wrong": [
+        "Monako",
+        "San Marino",
+        "Lihtenştayn"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Brezilya'nın resmi dili hangisidir?",
+      "difficulty": 2,
+      "correct": "Portekizce",
+      "wrong": [
+        "İspanyolca",
+        "Fransızca",
+        "İtalyanca"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Moğolistan'ın başkenti neresidir?",
+      "difficulty": 3,
+      "correct": "Ulan Batur",
+      "wrong": [
+        "Astana",
+        "Bişkek",
+        "Taşkent"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yüzölçümü bakımından Afrika'nın en büyük ülkesi hangisidir?",
+      "difficulty": 3,
+      "correct": "Cezayir",
+      "wrong": [
+        "Kongo DC",
+        "Sudan",
+        "Libya"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Denizaşırı toprakları sayesinde en çok saat dilimine sahip ülke hangisidir?",
+      "difficulty": 3,
+      "correct": "Fransa",
+      "wrong": [
+        "Rusya",
+        "ABD",
+        "Çin"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kazakistan'ın başkenti neresidir?",
+      "difficulty": 3,
+      "correct": "Astana",
+      "wrong": [
+        "Almatı",
+        "Taşkent",
+        "Bişkek"
+      ],
+      "explanation": ""
+    }
+  ]
+}

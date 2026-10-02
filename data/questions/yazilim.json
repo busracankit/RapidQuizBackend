@@ -1,0 +1,232 @@
+{
+  "category": {
+    "slug": "yazilim",
+    "name": "Yazılım",
+    "description": "Diller, algoritmalar ve yazılım geliştirme pratikleri.",
+    "icon": "code",
+    "color": "#3B82F6",
+    "order": 1
+  },
+  "questions": [
+    {
+      "text": "Web sayfalarının iskeletini oluşturan işaretleme dili hangisidir?",
+      "difficulty": 1,
+      "correct": "HTML",
+      "wrong": [
+        "CSS",
+        "SQL",
+        "JSON"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Python'da ekrana yazı yazdıran fonksiyon hangisidir?",
+      "difficulty": 1,
+      "correct": "print()",
+      "wrong": [
+        "echo()",
+        "write()",
+        "console.log()"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Git'te yerel değişiklikleri uzak depoya gönderen komut hangisidir?",
+      "difficulty": 1,
+      "correct": "git push",
+      "wrong": [
+        "git pull",
+        "git clone",
+        "git fetch"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Veritabanından veri sorgulamak için kullanılan dil hangisidir?",
+      "difficulty": 1,
+      "correct": "SQL",
+      "wrong": [
+        "HTML",
+        "CSS",
+        "YAML"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Tarayıcılarda yerleşik olarak çalışan programlama dili hangisidir?",
+      "difficulty": 1,
+      "correct": "JavaScript",
+      "wrong": [
+        "Java",
+        "C#",
+        "Kotlin"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Koddaki hataları bulup ayıklama işlemine İngilizcede ne denir?",
+      "difficulty": 1,
+      "correct": "Debugging",
+      "wrong": [
+        "Deploying",
+        "Refactoring",
+        "Compiling"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yalnızca true veya false değerini alabilen veri tipi hangisidir?",
+      "difficulty": 1,
+      "correct": "Boolean",
+      "wrong": [
+        "Integer",
+        "String",
+        "Float"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "CSS ne için kullanılır?",
+      "difficulty": 1,
+      "correct": "Sayfanın görünümünü biçimlendirmek",
+      "wrong": [
+        "Veritabanı yönetmek",
+        "Sunucu kurmak",
+        "Kod derlemek"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İkili aramanın (binary search) zaman karmaşıklığı nedir?",
+      "difficulty": 2,
+      "correct": "O(log n)",
+      "wrong": [
+        "O(n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yığın (stack) veri yapısı hangi prensiple çalışır?",
+      "difficulty": 2,
+      "correct": "LIFO",
+      "wrong": [
+        "FIFO",
+        "Rastgele erişim",
+        "Öncelik sırası"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "HTTP'de 404 durum kodu neyi ifade eder?",
+      "difficulty": 2,
+      "correct": "Kaynak bulunamadı",
+      "wrong": [
+        "Sunucu hatası",
+        "Yetkisiz erişim",
+        "Başarılı istek"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Python'da değiştirilemez (immutable) sıralı koleksiyon tipi hangisidir?",
+      "difficulty": 2,
+      "correct": "tuple",
+      "wrong": [
+        "list",
+        "dict",
+        "set"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "REST API'de yeni kaynak oluşturmak için genellikle hangi HTTP metodu kullanılır?",
+      "difficulty": 2,
+      "correct": "POST",
+      "wrong": [
+        "GET",
+        "DELETE",
+        "HEAD"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Linux çekirdeğini ilk olarak geliştiren kişi kimdir?",
+      "difficulty": 2,
+      "correct": "Linus Torvalds",
+      "wrong": [
+        "Richard Stallman",
+        "Bill Gates",
+        "Dennis Ritchie"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir sınıfın başka bir sınıftan özellik ve davranış almasına ne denir?",
+      "difficulty": 2,
+      "correct": "Kalıtım",
+      "wrong": [
+        "Kapsülleme",
+        "Soyutlama",
+        "Çok biçimlilik"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "JSON kısaltmasındaki 'J' harfi neyi ifade eder?",
+      "difficulty": 2,
+      "correct": "JavaScript",
+      "wrong": [
+        "Java",
+        "Julia",
+        "Jython"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Hızlı sıralama (quicksort) algoritmasının en kötü durum karmaşıklığı nedir?",
+      "difficulty": 3,
+      "correct": "O(n²)",
+      "wrong": [
+        "O(n log n)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Dijkstra algoritması negatif olmayan ağırlıklı bir grafta neyi bulur?",
+      "difficulty": 3,
+      "correct": "Tek kaynaktan en kısa yolları",
+      "wrong": [
+        "Minimum yayılan ağacı",
+        "Maksimum akışı",
+        "Topolojik sıralamayı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "SOLID ilkelerindeki 'L' harfi hangi ilkeyi temsil eder?",
+      "difficulty": 3,
+      "correct": "Liskov yerine geçme",
+      "wrong": [
+        "Gevşek bağlılık",
+        "Katmanlı mimari",
+        "Tembel yükleme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Python'daki GIL kısaltmasının açılımı nedir?",
+      "difficulty": 3,
+      "correct": "Global Interpreter Lock",
+      "wrong": [
+        "General Input Layer",
+        "Global Instance Loader",
+        "Generic Iterator Lock"
+      ],
+      "explanation": ""
+    }
+  ]
+}

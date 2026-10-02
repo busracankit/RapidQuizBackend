@@ -1,0 +1,232 @@
+{
+  "category": {
+    "slug": "yapay-zeka",
+    "name": "Yapay Zeka",
+    "description": "Makine öğrenmesi, derin öğrenme ve yapay zekanın tarihi.",
+    "icon": "brain",
+    "color": "#A855F7",
+    "order": 2
+  },
+  "questions": [
+    {
+      "text": "ChatGPT'yi geliştiren şirket hangisidir?",
+      "difficulty": 1,
+      "correct": "OpenAI",
+      "wrong": [
+        "Google",
+        "Meta",
+        "Microsoft"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Makine öğrenmesinin İngilizce kısaltması hangisidir?",
+      "difficulty": 1,
+      "correct": "ML",
+      "wrong": [
+        "DL",
+        "NLP",
+        "CV"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bilgisayarların görüntüleri anlamasını sağlayan yapay zeka alanına ne denir?",
+      "difficulty": 1,
+      "correct": "Bilgisayarlı görü",
+      "wrong": [
+        "Doğal dil işleme",
+        "Uzman sistemler",
+        "Bulanık mantık"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İnsan beyninden esinlenen yapay zeka modellerine ne ad verilir?",
+      "difficulty": 1,
+      "correct": "Yapay sinir ağları",
+      "wrong": [
+        "Karar ağaçları",
+        "Genetik algoritmalar",
+        "İlişkisel veritabanları"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Turing Testi neyi ölçmeyi amaçlar?",
+      "difficulty": 1,
+      "correct": "Makinenin insandan ayırt edilememesini",
+      "wrong": [
+        "İşlemci hızını",
+        "Bellek kapasitesini",
+        "Ağ bağlantı hızını"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "1997'de satranç şampiyonu Kasparov'u yenen IBM bilgisayarı hangisidir?",
+      "difficulty": 1,
+      "correct": "Deep Blue",
+      "wrong": [
+        "Watson",
+        "AlphaGo",
+        "HAL 9000"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "NLP kısaltması hangi yapay zeka alanını ifade eder?",
+      "difficulty": 1,
+      "correct": "Doğal dil işleme",
+      "wrong": [
+        "Sayısal mantık programlama",
+        "Yeni nesil işlemciler",
+        "Ağ yük planlama"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Etiketli verilerle yapılan makine öğrenmesi türüne ne denir?",
+      "difficulty": 1,
+      "correct": "Denetimli öğrenme",
+      "wrong": [
+        "Denetimsiz öğrenme",
+        "Pekiştirmeli öğrenme",
+        "Kendi kendine evrim"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "'Yapay zeka' terimi ilk kez 1956'da hangi konferansta kullanıldı?",
+      "difficulty": 2,
+      "correct": "Dartmouth",
+      "wrong": [
+        "Stanford",
+        "MIT",
+        "Cambridge"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Transformer mimarisini tanıtan 2017 makalesinin adı nedir?",
+      "difficulty": 2,
+      "correct": "Attention Is All You Need",
+      "wrong": [
+        "Deep Residual Learning",
+        "ImageNet Classification",
+        "Generative Adversarial Nets"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "GAN kısaltmasındaki 'A' harfi neyi ifade eder?",
+      "difficulty": 2,
+      "correct": "Adversarial",
+      "wrong": [
+        "Automated",
+        "Attention",
+        "Adaptive"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Go oyununda dünya şampiyonunu yenen DeepMind programı hangisidir?",
+      "difficulty": 2,
+      "correct": "AlphaGo",
+      "wrong": [
+        "Deep Blue",
+        "Watson",
+        "AlphaFold"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Modelin eğitim verisini ezberleyip yeni veride kötü sonuç vermesine ne denir?",
+      "difficulty": 2,
+      "correct": "Aşırı öğrenme (overfitting)",
+      "wrong": [
+        "Eksik öğrenme (underfitting)",
+        "Veri artırma",
+        "Erken durdurma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ajanın ödül ve cezayla deneyerek öğrendiği yöntem hangisidir?",
+      "difficulty": 2,
+      "correct": "Pekiştirmeli öğrenme",
+      "wrong": [
+        "Denetimli öğrenme",
+        "Denetimsiz öğrenme",
+        "Kümeleme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sinir ağlarında hatayı geriye yayarak ağırlıkları güncelleyen algoritma hangisidir?",
+      "difficulty": 2,
+      "correct": "Geri yayılım (backpropagation)",
+      "wrong": [
+        "İleri besleme",
+        "K-means",
+        "Dropout"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "LLM kısaltmasının açılımı nedir?",
+      "difficulty": 2,
+      "correct": "Large Language Model",
+      "wrong": [
+        "Linear Learning Machine",
+        "Logical Language Module",
+        "Long Latent Memory"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "ReLU aktivasyon fonksiyonu negatif girdiler için hangi değeri üretir?",
+      "difficulty": 3,
+      "correct": "0",
+      "wrong": [
+        "-1",
+        "1",
+        "Girdinin kendisini"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "CNN'lerde öznitelik haritasının boyutunu küçültmek için kullanılan katman hangisidir?",
+      "difficulty": 3,
+      "correct": "Havuzlama (pooling)",
+      "wrong": [
+        "Dropout",
+        "Softmax",
+        "Gömme (embedding)"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Perceptron'u 1958'de tanıtan bilim insanı kimdir?",
+      "difficulty": 3,
+      "correct": "Frank Rosenblatt",
+      "wrong": [
+        "Marvin Minsky",
+        "Geoffrey Hinton",
+        "Alan Turing"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Transformer'da kelime sırası bilgisini modele veren bileşen hangisidir?",
+      "difficulty": 3,
+      "correct": "Konumsal kodlama",
+      "wrong": [
+        "Softmax katmanı",
+        "Artık bağlantı",
+        "Katman normalizasyonu"
+      ],
+      "explanation": ""
+    }
+  ]
+}

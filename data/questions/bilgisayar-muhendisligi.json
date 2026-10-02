@@ -1,0 +1,232 @@
+{
+  "category": {
+    "slug": "bilgisayar-muhendisligi",
+    "name": "Bilgisayar Mühendisliği",
+    "description": "Donanım, işletim sistemleri, ağlar ve mimari.",
+    "icon": "cpu",
+    "color": "#F97316",
+    "order": 3
+  },
+  "questions": [
+    {
+      "text": "Bilgisayarın 'beyni' olarak bilinen bileşen hangisidir?",
+      "difficulty": 1,
+      "correct": "CPU",
+      "wrong": [
+        "RAM",
+        "SSD",
+        "PSU"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Elektrik kesildiğinde içeriği silinen bellek türü hangisidir?",
+      "difficulty": 1,
+      "correct": "RAM",
+      "wrong": [
+        "SSD",
+        "HDD",
+        "ROM"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "1 bayt kaç bitten oluşur?",
+      "difficulty": 1,
+      "correct": "8",
+      "wrong": [
+        "4",
+        "10",
+        "16"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İkili (binary) sayı sisteminde hangi rakamlar kullanılır?",
+      "difficulty": 1,
+      "correct": "0 ve 1",
+      "wrong": [
+        "0'dan 9'a",
+        "1 ve 2",
+        "0, 1 ve 2"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Grafik işlemlerinden sorumlu işlemcinin kısaltması nedir?",
+      "difficulty": 1,
+      "correct": "GPU",
+      "wrong": [
+        "CPU",
+        "PSU",
+        "NIC"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir ağdaki cihazı tanımlayan sayısal adrese ne denir?",
+      "difficulty": 1,
+      "correct": "IP adresi",
+      "wrong": [
+        "URL",
+        "HTML",
+        "E-posta adresi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Windows, macOS ve Linux'un ortak özelliği nedir?",
+      "difficulty": 1,
+      "correct": "Hepsi işletim sistemi",
+      "wrong": [
+        "Hepsi tarayıcı",
+        "Hepsi programlama dili",
+        "Hepsi veritabanı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Alan adlarını IP adreslerine çeviren sistem hangisidir?",
+      "difficulty": 1,
+      "correct": "DNS",
+      "wrong": [
+        "DHCP",
+        "FTP",
+        "SMTP"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ondalık 10 sayısının ikili (binary) karşılığı nedir?",
+      "difficulty": 2,
+      "correct": "1010",
+      "wrong": [
+        "1100",
+        "1001",
+        "1110"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "OSI referans modelinde kaç katman vardır?",
+      "difficulty": 2,
+      "correct": "7",
+      "wrong": [
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "HTTPS'in varsayılan port numarası nedir?",
+      "difficulty": 2,
+      "correct": "443",
+      "wrong": [
+        "80",
+        "22",
+        "8080"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "TCP ve UDP, OSI modelinin hangi katmanında çalışır?",
+      "difficulty": 2,
+      "correct": "Taşıma katmanı",
+      "wrong": [
+        "Ağ katmanı",
+        "Oturum katmanı",
+        "Veri bağı katmanı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İşlemcideki en hızlı ve en küçük bellek birimi hangisidir?",
+      "difficulty": 2,
+      "correct": "Yazmaç (register)",
+      "wrong": [
+        "L3 önbellek",
+        "RAM",
+        "SSD"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Moore Yasası neyi öngörür?",
+      "difficulty": 2,
+      "correct": "Transistör sayısı 2 yılda ikiye katlanır",
+      "wrong": [
+        "İşlemci hızı her yıl yarıya iner",
+        "Bellek fiyatı 2 yılda ikiye katlanır",
+        "Disk kapasitesi sabit kalır"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Von Neumann mimarisinde program ve veri nerede tutulur?",
+      "difficulty": 2,
+      "correct": "Aynı bellekte",
+      "wrong": [
+        "Ayrı belleklerde",
+        "Yalnızca diskte",
+        "Yalnızca işlemcide"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir MAC adresi kaç bitten oluşur?",
+      "difficulty": 2,
+      "correct": "48",
+      "wrong": [
+        "32",
+        "64",
+        "128"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İki sürecin birbirinin tuttuğu kaynağı sonsuza dek beklemesine ne denir?",
+      "difficulty": 3,
+      "correct": "Kilitlenme (deadlock)",
+      "wrong": [
+        "Yarış durumu",
+        "Açlık (starvation)",
+        "Bağlam değişimi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "IPv6 adresleri kaç bit uzunluğundadır?",
+      "difficulty": 3,
+      "correct": "128",
+      "wrong": [
+        "32",
+        "64",
+        "256"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Tek başına tüm mantık devrelerini kurmaya yeten 'evrensel' kapı hangisidir?",
+      "difficulty": 3,
+      "correct": "NAND",
+      "wrong": [
+        "XOR",
+        "AND",
+        "OR"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İkiye tümleyen gösteriminde 8 bitle yazılabilen en küçük sayı nedir?",
+      "difficulty": 3,
+      "correct": "-128",
+      "wrong": [
+        "-127",
+        "-255",
+        "-256"
+      ],
+      "explanation": ""
+    }
+  ]
+}

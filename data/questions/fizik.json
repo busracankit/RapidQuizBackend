@@ -1,0 +1,232 @@
+{
+  "category": {
+    "slug": "fizik",
+    "name": "Fizik",
+    "description": "Mekanikten kuantuma temel fizik bilgisi.",
+    "icon": "atom",
+    "color": "#06B6D4",
+    "order": 5
+  },
+  "questions": [
+    {
+      "text": "Kuvvetin SI birimi nedir?",
+      "difficulty": 1,
+      "correct": "Newton",
+      "wrong": [
+        "Joule",
+        "Watt",
+        "Pascal"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Dünya'da yerçekimi ivmesi yaklaşık kaç m/s²'dir?",
+      "difficulty": 1,
+      "correct": "9,8",
+      "wrong": [
+        "1,6",
+        "15,2",
+        "32"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Deniz seviyesinde suyun kaynama noktası kaç °C'dir?",
+      "difficulty": 1,
+      "correct": "100",
+      "wrong": [
+        "80",
+        "90",
+        "120"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Işık boşlukta saniyede yaklaşık kaç km yol alır?",
+      "difficulty": 1,
+      "correct": "300.000",
+      "wrong": [
+        "30.000",
+        "150.000",
+        "3.000.000"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Elektrik akımının birimi nedir?",
+      "difficulty": 1,
+      "correct": "Amper",
+      "wrong": [
+        "Volt",
+        "Ohm",
+        "Watt"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Görelilik kuramını geliştiren bilim insanı kimdir?",
+      "difficulty": 1,
+      "correct": "Albert Einstein",
+      "wrong": [
+        "Isaac Newton",
+        "Nikola Tesla",
+        "Niels Bohr"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Enerjinin SI birimi nedir?",
+      "difficulty": 1,
+      "correct": "Joule",
+      "wrong": [
+        "Newton",
+        "Watt",
+        "Pascal"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Hareket yasalarını ve evrensel kütleçekimini ortaya koyan kimdir?",
+      "difficulty": 1,
+      "correct": "Isaac Newton",
+      "wrong": [
+        "Galileo Galilei",
+        "Johannes Kepler",
+        "Albert Einstein"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "E = mc² formülündeki 'c' neyi ifade eder?",
+      "difficulty": 2,
+      "correct": "Işık hızı",
+      "wrong": [
+        "Ses hızı",
+        "Kütle",
+        "Isı sığası"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ohm Yasası'na göre gerilim neye eşittir?",
+      "difficulty": 2,
+      "correct": "Akım × direnç",
+      "wrong": [
+        "Akım / direnç",
+        "Güç × zaman",
+        "Direnç / akım"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ses dalgaları hangi ortamda yayılamaz?",
+      "difficulty": 2,
+      "correct": "Boşluk",
+      "wrong": [
+        "Su",
+        "Hava",
+        "Çelik"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Atom çekirdeğinde bulunan yüksüz parçacık hangisidir?",
+      "difficulty": 2,
+      "correct": "Nötron",
+      "wrong": [
+        "Proton",
+        "Elektron",
+        "Foton"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Mutlak sıfır kaç °C'dir?",
+      "difficulty": 2,
+      "correct": "-273,15",
+      "wrong": [
+        "-100",
+        "0",
+        "-459,67"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Gücün SI birimi nedir?",
+      "difficulty": 2,
+      "correct": "Watt",
+      "wrong": [
+        "Joule",
+        "Newton",
+        "Volt"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Net kuvvetin sıfır olduğu hareketli bir cisim ne yapar?",
+      "difficulty": 2,
+      "correct": "Sabit hızla gitmeye devam eder",
+      "wrong": [
+        "Sürekli hızlanır",
+        "Yavaşlayarak durur",
+        "Dairesel hareket yapar"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Beyaz ışığın prizmada renklerine ayrılmasına ne denir?",
+      "difficulty": 2,
+      "correct": "Dağılma (dispersiyon)",
+      "wrong": [
+        "Yansıma",
+        "Girişim",
+        "Polarizasyon"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Planck sabitinin yaklaşık değeri nedir?",
+      "difficulty": 3,
+      "correct": "6,626 × 10⁻³⁴ J·s",
+      "wrong": [
+        "6,674 × 10⁻¹¹ J·s",
+        "1,602 × 10⁻¹⁹ J·s",
+        "9,109 × 10⁻³¹ J·s"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Heisenberg belirsizlik ilkesi hangi iki büyüklüğü birlikte sınırlar?",
+      "difficulty": 3,
+      "correct": "Konum ve momentum",
+      "wrong": [
+        "Kütle ve enerji",
+        "Hız ve ivme",
+        "Sıcaklık ve basınç"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Termodinamiğin 2. yasasına göre yalıtılmış bir sistemde hangi büyüklük azalmaz?",
+      "difficulty": 3,
+      "correct": "Entropi",
+      "wrong": [
+        "Entalpi",
+        "İç enerji",
+        "Sıcaklık"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Fotoelektrik olayı açıklamasıyla Nobel Ödülü alan bilim insanı kimdir?",
+      "difficulty": 3,
+      "correct": "Albert Einstein",
+      "wrong": [
+        "Max Planck",
+        "Niels Bohr",
+        "Marie Curie"
+      ],
+      "explanation": ""
+    }
+  ]
+}
