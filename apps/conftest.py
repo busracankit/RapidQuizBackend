@@ -18,6 +18,23 @@ def make_question(category, text="Python'da liste hangi parantezle yazılır?", 
     return question
 
 
+def fill_category(category, easy=10, medium=10, hard=5):
+    """Kategoriye oynanabilir sorular ekler (zorluk başına verilen sayıda)."""
+    created = []
+    for difficulty, n in ((1, easy), (2, medium), (3, hard)):
+        for i in range(n):
+            created.append(
+                make_question(category, text=f"Z{difficulty} soru {i}", difficulty=difficulty)
+            )
+    return created
+
+
+@pytest.fixture
+def full_category(category):
+    fill_category(category)
+    return category
+
+
 @pytest.fixture
 def question(category):
     return make_question(category)
