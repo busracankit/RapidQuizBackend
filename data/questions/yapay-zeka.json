@@ -227,6 +227,446 @@
         "Katman normalizasyonu"
       ],
       "explanation": ""
+    },
+    {
+      "text": "Google'ın geliştirdiği yapay zeka asistanının adı nedir?",
+      "difficulty": 1,
+      "correct": "Gemini",
+      "wrong": [
+        "Siri",
+        "Alexa",
+        "Cortana"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Apple'ın sesli asistanının adı nedir?",
+      "difficulty": 1,
+      "correct": "Siri",
+      "wrong": [
+        "Alexa",
+        "Cortana",
+        "Bixby"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Amazon'un sesli asistanının adı nedir?",
+      "difficulty": 1,
+      "correct": "Alexa",
+      "wrong": [
+        "Siri",
+        "Bixby",
+        "Cortana"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Claude adlı yapay zeka modelini geliştiren şirket hangisidir?",
+      "difficulty": 1,
+      "correct": "Anthropic",
+      "wrong": [
+        "OpenAI",
+        "Google",
+        "Meta"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir modelin öğrenmek için kullandığı örneklerin bütününe ne denir?",
+      "difficulty": 1,
+      "correct": "Eğitim verisi",
+      "wrong": [
+        "Kaynak kodu",
+        "Donanım",
+        "Arayüz"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Metinden görsel üreten yapay zeka modellerine örnek hangisidir?",
+      "difficulty": 1,
+      "correct": "DALL·E",
+      "wrong": [
+        "BERT",
+        "Excel",
+        "Linux"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "'Yapay zeka'nın İngilizce kısaltması nedir?",
+      "difficulty": 1,
+      "correct": "AI",
+      "wrong": [
+        "IT",
+        "IoT",
+        "VR"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "E-postaları 'spam' ve 'spam değil' diye ayırmak hangi tür görevdir?",
+      "difficulty": 1,
+      "correct": "Sınıflandırma",
+      "wrong": [
+        "Kümeleme",
+        "Regresyon",
+        "Boyut indirgeme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sohbet robotlarının İngilizce adı nedir?",
+      "difficulty": 1,
+      "correct": "Chatbot",
+      "wrong": [
+        "Crawler",
+        "Compiler",
+        "Router"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Turing Testi'ni öneren bilim insanı kimdir?",
+      "difficulty": 1,
+      "correct": "Alan Turing",
+      "wrong": [
+        "John von Neumann",
+        "Charles Babbage",
+        "Claude Shannon"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Eğitilmiş bir modelin yeni veriler için tahmin üretmesine ne denir?",
+      "difficulty": 1,
+      "correct": "Çıkarım (inference)",
+      "wrong": [
+        "Derleme",
+        "Etiketleme",
+        "Sıkıştırma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yüz tanıma sistemleri hangi tür veriyle çalışır?",
+      "difficulty": 1,
+      "correct": "Görüntü",
+      "wrong": [
+        "Ses",
+        "Metin",
+        "Sıcaklık"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Konuşmayı yazıya çeviren teknolojiye ne denir?",
+      "difficulty": 1,
+      "correct": "Konuşma tanıma",
+      "wrong": [
+        "Görüntü işleme",
+        "Metin özetleme",
+        "Makine çevirisi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir sinir ağındaki temel hesaplama birimine ne denir?",
+      "difficulty": 1,
+      "correct": "Nöron",
+      "wrong": [
+        "Piksel",
+        "Bayt",
+        "Çekirdek"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yapay zekanın kendinden emin şekilde uydurma bilgi üretmesine ne denir?",
+      "difficulty": 1,
+      "correct": "Halüsinasyon",
+      "wrong": [
+        "Önbellekleme",
+        "Sıkıştırma",
+        "Şifreleme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Etiketsiz verideki benzer örnekleri gruplama yöntemine ne denir?",
+      "difficulty": 1,
+      "correct": "Kümeleme",
+      "wrong": [
+        "Sınıflandırma",
+        "Regresyon",
+        "Etiketleme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "GPT kısaltmasındaki 'T' harfi neyi ifade eder?",
+      "difficulty": 2,
+      "correct": "Transformer",
+      "wrong": [
+        "Training",
+        "Token",
+        "Text"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "BERT dil modelini geliştiren şirket hangisidir?",
+      "difficulty": 2,
+      "correct": "Google",
+      "wrong": [
+        "OpenAI",
+        "Meta",
+        "IBM"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Derin öğrenmedeki katkılarıyla 2018 Turing Ödülü'nü alanlardan biri kimdir?",
+      "difficulty": 2,
+      "correct": "Geoffrey Hinton",
+      "wrong": [
+        "Andrew Ng",
+        "Elon Musk",
+        "Sam Altman"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir dil modelinin işlediği metin parçalarına ne denir?",
+      "difficulty": 2,
+      "correct": "Token",
+      "wrong": [
+        "Piksel",
+        "Paket",
+        "Çerçeve"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kesinlik (precision) ve duyarlılığın (recall) harmonik ortalaması hangisidir?",
+      "difficulty": 2,
+      "correct": "F1 skoru",
+      "wrong": [
+        "Doğruluk",
+        "AUC",
+        "MSE"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Önceden eğitilmiş bir modeli yeni bir göreve uyarlamaya ne denir?",
+      "difficulty": 2,
+      "correct": "İnce ayar (fine-tuning)",
+      "wrong": [
+        "Ön işleme",
+        "Veri artırma",
+        "Budama"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ev fiyatı gibi sürekli bir değeri tahmin etmeye ne denir?",
+      "difficulty": 2,
+      "correct": "Regresyon",
+      "wrong": [
+        "Sınıflandırma",
+        "Kümeleme",
+        "Segmentasyon"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Görüntü işlemede en yaygın kullanılan sinir ağı türü hangisidir?",
+      "difficulty": 2,
+      "correct": "CNN",
+      "wrong": [
+        "RNN",
+        "LSTM",
+        "Word2Vec"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Modeli, eğitimde hiç görmediği verilerle ölçmek için ayrılan kümeye ne denir?",
+      "difficulty": 2,
+      "correct": "Test kümesi",
+      "wrong": [
+        "Eğitim kümesi",
+        "Ham veri",
+        "Etiket kümesi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kelimeleri anlamı koruyan sayısal vektörlere dönüştüren temsile ne denir?",
+      "difficulty": 2,
+      "correct": "Gömme (embedding)",
+      "wrong": [
+        "Etiketleme",
+        "Normalleştirme",
+        "Sıkıştırma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Eğitimde nöronları rastgele devre dışı bırakan düzenlileştirme tekniği hangisidir?",
+      "difficulty": 2,
+      "correct": "Dropout",
+      "wrong": [
+        "Pooling",
+        "Softmax",
+        "Batch size"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Çıktı skorlarını olasılık dağılımına çeviren fonksiyon hangisidir?",
+      "difficulty": 2,
+      "correct": "Softmax",
+      "wrong": [
+        "ReLU",
+        "Tanh",
+        "Dropout"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "LSTM hangi sinir ağı türünün özel bir çeşididir?",
+      "difficulty": 2,
+      "correct": "RNN",
+      "wrong": [
+        "CNN",
+        "GAN",
+        "Karar ağacı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İnsan geri bildirimiyle pekiştirmeli öğrenmenin kısaltması nedir?",
+      "difficulty": 2,
+      "correct": "RLHF",
+      "wrong": [
+        "RNN",
+        "LLM",
+        "GPU"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Meta'nın geliştirdiği yaygın derin öğrenme kütüphanesi hangisidir?",
+      "difficulty": 2,
+      "correct": "PyTorch",
+      "wrong": [
+        "TensorFlow",
+        "Pandas",
+        "Django"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "'Yapay zeka' (artificial intelligence) terimini ortaya atan bilim insanı kimdir?",
+      "difficulty": 2,
+      "correct": "John McCarthy",
+      "wrong": [
+        "Alan Turing",
+        "Marvin Minsky",
+        "Claude Shannon"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Gradyan inişte adım büyüklüğünü belirleyen hiperparametre hangisidir?",
+      "difficulty": 3,
+      "correct": "Öğrenme oranı",
+      "wrong": [
+        "Batch boyutu",
+        "Epoch sayısı",
+        "Dropout oranı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Derin ağlarda gradyanların giderek küçülüp öğrenmeyi durdurmasına ne denir?",
+      "difficulty": 3,
+      "correct": "Kaybolan gradyan",
+      "wrong": [
+        "Patlayan gradyan",
+        "Aşırı öğrenme",
+        "Erken durdurma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "ResNet mimarisinin temel yeniliği nedir?",
+      "difficulty": 3,
+      "correct": "Artık (skip) bağlantılar",
+      "wrong": [
+        "Dikkat mekanizması",
+        "Havuzlama katmanı",
+        "Rastgele ormanlar"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Transformer'da dikkat skorları temelde hangi işlemle hesaplanır?",
+      "difficulty": 3,
+      "correct": "Ölçeklenmiş nokta çarpımı",
+      "wrong": [
+        "Evrişim",
+        "Özyineleme",
+        "Karar ağacı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Q-learning hangi öğrenme türüne aittir?",
+      "difficulty": 3,
+      "correct": "Pekiştirmeli öğrenme",
+      "wrong": [
+        "Denetimli öğrenme",
+        "Denetimsiz öğrenme",
+        "Transfer öğrenme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "2012'de ImageNet yarışmasını kazanarak derin öğrenme dalgasını başlatan model hangisidir?",
+      "difficulty": 3,
+      "correct": "AlexNet",
+      "wrong": [
+        "LeNet",
+        "VGGNet",
+        "ResNet"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "SVM'lerde doğrusal ayrılamayan veriyi ayırmak için kullanılan yöntem hangisidir?",
+      "difficulty": 3,
+      "correct": "Çekirdek hilesi (kernel trick)",
+      "wrong": [
+        "Geri yayılım",
+        "Dropout",
+        "Veri artırma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sınıflandırma modellerinde en sık kullanılan kayıp fonksiyonu hangisidir?",
+      "difficulty": 3,
+      "correct": "Çapraz entropi",
+      "wrong": [
+        "Ortalama kare hata",
+        "Mutlak hata",
+        "Huber kaybı"
+      ],
+      "explanation": ""
     }
   ]
 }

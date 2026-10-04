@@ -227,6 +227,446 @@
         "Marie Curie"
       ],
       "explanation": ""
+    },
+    {
+      "text": "Basıncın SI birimi nedir?",
+      "difficulty": 1,
+      "correct": "Pascal",
+      "wrong": [
+        "Newton",
+        "Joule",
+        "Watt"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Elektrik geriliminin (voltaj) birimi nedir?",
+      "difficulty": 1,
+      "correct": "Volt",
+      "wrong": [
+        "Amper",
+        "Ohm",
+        "Watt"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Elektriksel direncin birimi nedir?",
+      "difficulty": 1,
+      "correct": "Ohm",
+      "wrong": [
+        "Volt",
+        "Amper",
+        "Tesla"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Deniz seviyesinde saf suyun donma noktası kaç °C'dir?",
+      "difficulty": 1,
+      "correct": "0",
+      "wrong": [
+        "-10",
+        "4",
+        "32"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sesin havadaki hızı yaklaşık kaç m/s'dir?",
+      "difficulty": 1,
+      "correct": "340",
+      "wrong": [
+        "34",
+        "3.400",
+        "300.000"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Işığın bir yüzeye çarpıp geri dönmesine ne denir?",
+      "difficulty": 1,
+      "correct": "Yansıma",
+      "wrong": [
+        "Kırılma",
+        "Soğurma",
+        "Dağılma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir mıknatısın iki ucuna ne ad verilir?",
+      "difficulty": 1,
+      "correct": "Kutup",
+      "wrong": [
+        "Çekirdek",
+        "Elektrot",
+        "Anot"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kütlenin SI birimi nedir?",
+      "difficulty": 1,
+      "correct": "Kilogram",
+      "wrong": [
+        "Gram",
+        "Newton",
+        "Litre"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ay'daki yerçekimi Dünya'dakine göre nasıldır?",
+      "difficulty": 1,
+      "correct": "Daha zayıf",
+      "wrong": [
+        "Daha güçlü",
+        "Aynı",
+        "Hiç yok"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir maddenin birim hacmindeki kütlesine ne denir?",
+      "difficulty": 1,
+      "correct": "Yoğunluk",
+      "wrong": [
+        "Ağırlık",
+        "Basınç",
+        "Hacim"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sıcaklığın SI birimi nedir?",
+      "difficulty": 1,
+      "correct": "Kelvin",
+      "wrong": [
+        "Celsius",
+        "Fahrenheit",
+        "Joule"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Gökkuşağı hangi olay sonucu oluşur?",
+      "difficulty": 1,
+      "correct": "Işığın kırılması ve dağılması",
+      "wrong": [
+        "Sesin yankılanması",
+        "Bulutların yanması",
+        "Ay ışığının yansıması"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Atom çekirdeği etrafında bulunan eksi yüklü parçacık hangisidir?",
+      "difficulty": 1,
+      "correct": "Elektron",
+      "wrong": [
+        "Proton",
+        "Nötron",
+        "Foton"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Birbirine sürtünen yüzeyler arasında harekete karşı koyan kuvvet hangisidir?",
+      "difficulty": 1,
+      "correct": "Sürtünme",
+      "wrong": [
+        "Kaldırma",
+        "Manyetizma",
+        "Merkezkaç"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Frekansın birimi nedir?",
+      "difficulty": 1,
+      "correct": "Hertz",
+      "wrong": [
+        "Watt",
+        "Tesla",
+        "Pascal"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Pusula iğnesi neden kuzeyi gösterir?",
+      "difficulty": 1,
+      "correct": "Dünya'nın manyetik alanı",
+      "wrong": [
+        "Rüzgârın yönü",
+        "Güneş'in konumu",
+        "Yerçekimi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Newton'un ikinci hareket yasasının formülü hangisidir?",
+      "difficulty": 2,
+      "correct": "F = m·a",
+      "wrong": [
+        "E = m·c²",
+        "P = V·I",
+        "V = I·R"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kinetik enerjinin formülü hangisidir?",
+      "difficulty": 2,
+      "correct": "½·m·v²",
+      "wrong": [
+        "m·g·h",
+        "m·v",
+        "F·t"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Manyetik alan şiddetinin SI birimi nedir?",
+      "difficulty": 2,
+      "correct": "Tesla",
+      "wrong": [
+        "Weber",
+        "Henry",
+        "Gauss"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Elektrik yükünün SI birimi nedir?",
+      "difficulty": 2,
+      "correct": "Coulomb",
+      "wrong": [
+        "Amper",
+        "Volt",
+        "Farad"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sıvıya batan cisme etki eden kaldırma kuvvetini açıklayan ilke hangisidir?",
+      "difficulty": 2,
+      "correct": "Arşimet ilkesi",
+      "wrong": [
+        "Pascal ilkesi",
+        "Bernoulli ilkesi",
+        "Hooke yasası"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Işık hangi ortamda en hızlı yayılır?",
+      "difficulty": 2,
+      "correct": "Boşluk",
+      "wrong": [
+        "Su",
+        "Cam",
+        "Elmas"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yerden h yüksekliğindeki bir cismin potansiyel enerjisi nedir?",
+      "difficulty": 2,
+      "correct": "m·g·h",
+      "wrong": [
+        "½·m·v²",
+        "m·a",
+        "m·c²"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yaydaki uzama ile uygulanan kuvvet arasındaki ilişkiyi veren yasa hangisidir?",
+      "difficulty": 2,
+      "correct": "Hooke yasası",
+      "wrong": [
+        "Ohm yasası",
+        "Boyle yasası",
+        "Coulomb yasası"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Havada ilerleyen ses dalgaları hangi tür dalgadır?",
+      "difficulty": 2,
+      "correct": "Boyuna dalga",
+      "wrong": [
+        "Enine dalga",
+        "Elektromanyetik dalga",
+        "Yüzey dalgası"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir saniyedeki titreşim sayısına ne denir?",
+      "difficulty": 2,
+      "correct": "Frekans",
+      "wrong": [
+        "Periyot",
+        "Genlik",
+        "Dalga boyu"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yaklaşan ambulansın sireninin daha tiz duyulmasına ne denir?",
+      "difficulty": 2,
+      "correct": "Doppler etkisi",
+      "wrong": [
+        "Rezonans",
+        "Girişim",
+        "Kırınım"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Radyoaktif maddenin yarısının bozunması için geçen süreye ne denir?",
+      "difficulty": 2,
+      "correct": "Yarı ömür",
+      "wrong": [
+        "Periyot",
+        "Ömür sınırı",
+        "Tepkime süresi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Işık yılı neyin birimidir?",
+      "difficulty": 2,
+      "correct": "Uzaklık",
+      "wrong": [
+        "Zaman",
+        "Hız",
+        "Parlaklık"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Elektromanyetik spektrumda en yüksek enerjili ışınım hangisidir?",
+      "difficulty": 2,
+      "correct": "Gama ışını",
+      "wrong": [
+        "X ışını",
+        "Morötesi",
+        "Radyo dalgası"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir iletkenin uzunluğu artarsa direnci nasıl değişir?",
+      "difficulty": 2,
+      "correct": "Artar",
+      "wrong": [
+        "Azalır",
+        "Değişmez",
+        "Sıfır olur"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Momentum hangi iki büyüklüğün çarpımıdır?",
+      "difficulty": 2,
+      "correct": "Kütle ve hız",
+      "wrong": [
+        "Kütle ve ivme",
+        "Kuvvet ve yol",
+        "Enerji ve zaman"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Elektronun yükü yaklaşık kaç coulomb'dur?",
+      "difficulty": 3,
+      "correct": "1,602 × 10⁻¹⁹",
+      "wrong": [
+        "6,626 × 10⁻³⁴",
+        "9,109 × 10⁻³¹",
+        "6,022 × 10²³"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Schrödinger denklemi neyin zamanla değişimini tanımlar?",
+      "difficulty": 3,
+      "correct": "Dalga fonksiyonu",
+      "wrong": [
+        "Entropi",
+        "Momentum korunumu",
+        "Işık hızı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Evrensel çekim sabiti G'nin yaklaşık değeri nedir?",
+      "difficulty": 3,
+      "correct": "6,674 × 10⁻¹¹ N·m²/kg²",
+      "wrong": [
+        "6,626 × 10⁻³⁴ N·m²/kg²",
+        "3 × 10⁸ N·m²/kg²",
+        "8,99 × 10⁹ N·m²/kg²"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Pauli dışarlama ilkesi hangi parçacıklar için geçerlidir?",
+      "difficulty": 3,
+      "correct": "Fermiyonlar",
+      "wrong": [
+        "Bozonlar",
+        "Fotonlar",
+        "Gluonlar"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kara cisim ışımasını açıklamak için enerji kuantumunu öneren bilim insanı kimdir?",
+      "difficulty": 3,
+      "correct": "Max Planck",
+      "wrong": [
+        "Niels Bohr",
+        "Ernest Rutherford",
+        "Albert Einstein"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Higgs bozonu 2012'de hangi araştırma merkezinde keşfedildi?",
+      "difficulty": 3,
+      "correct": "CERN",
+      "wrong": [
+        "Fermilab",
+        "NASA",
+        "SLAC"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Özel görelilikte hızla hareket eden saatin yavaş işlemesine ne denir?",
+      "difficulty": 3,
+      "correct": "Zaman genişlemesi",
+      "wrong": [
+        "Uzunluk büzülmesi",
+        "Kırmızıya kayma",
+        "Kütle çekimi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Termodinamiğin birinci yasası hangi büyüklüğün korunumunu ifade eder?",
+      "difficulty": 3,
+      "correct": "Enerji",
+      "wrong": [
+        "Entropi",
+        "Momentum",
+        "Kütle"
+      ],
+      "explanation": ""
     }
   ]
 }

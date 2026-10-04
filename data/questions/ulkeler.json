@@ -227,6 +227,446 @@
         "Bişkek"
       ],
       "explanation": ""
+    },
+    {
+      "text": "İspanya'nın başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Madrid",
+      "wrong": [
+        "Barselona",
+        "Sevilla",
+        "Valensiya"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Fransa'nın başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Paris",
+      "wrong": [
+        "Lyon",
+        "Marsilya",
+        "Nice"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Big Ben saat kulesi hangi şehirdedir?",
+      "difficulty": 1,
+      "correct": "Londra",
+      "wrong": [
+        "Dublin",
+        "Edinburgh",
+        "Manchester"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Özgürlük Heykeli hangi ülkededir?",
+      "difficulty": 1,
+      "correct": "ABD",
+      "wrong": [
+        "Fransa",
+        "Kanada",
+        "İngiltere"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Pizza ve makarnasıyla ünlü ülke hangisidir?",
+      "difficulty": 1,
+      "correct": "İtalya",
+      "wrong": [
+        "Yunanistan",
+        "İspanya",
+        "Portekiz"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Çin Seddi hangi ülkededir?",
+      "difficulty": 1,
+      "correct": "Çin",
+      "wrong": [
+        "Japonya",
+        "Kore",
+        "Hindistan"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kanguruların doğal olarak yaşadığı ülke hangisidir?",
+      "difficulty": 1,
+      "correct": "Avustralya",
+      "wrong": [
+        "Güney Afrika",
+        "Brezilya",
+        "Hindistan"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Rusya'nın başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Moskova",
+      "wrong": [
+        "St. Petersburg",
+        "Kazan",
+        "Novosibirsk"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Tac Mahal hangi ülkededir?",
+      "difficulty": 1,
+      "correct": "Hindistan",
+      "wrong": [
+        "Pakistan",
+        "İran",
+        "Bangladeş"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Lale bahçeleri ve yel değirmenleriyle ünlü ülke hangisidir?",
+      "difficulty": 1,
+      "correct": "Hollanda",
+      "wrong": [
+        "Belçika",
+        "Danimarka",
+        "İsveç"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yunanistan'ın başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Atina",
+      "wrong": [
+        "Selanik",
+        "Girit",
+        "Patras"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Mısır'ın başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Kahire",
+      "wrong": [
+        "İskenderiye",
+        "Luksor",
+        "Asvan"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Hangisi Türkiye'nin kara sınırı komşusudur?",
+      "difficulty": 1,
+      "correct": "Gürcistan",
+      "wrong": [
+        "Romanya",
+        "Ukrayna",
+        "Mısır"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Hangi ülkenin Akdeniz'e kıyısı vardır?",
+      "difficulty": 1,
+      "correct": "İspanya",
+      "wrong": [
+        "Portekiz",
+        "Almanya",
+        "İsviçre"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Arjantin'in başkenti neresidir?",
+      "difficulty": 1,
+      "correct": "Buenos Aires",
+      "wrong": [
+        "Santiago",
+        "Lima",
+        "Montevideo"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bayrağı beyaz zemin üzerinde kırmızı daireden oluşan ülke hangisidir?",
+      "difficulty": 1,
+      "correct": "Japonya",
+      "wrong": [
+        "Çin",
+        "Vietnam",
+        "Güney Kore"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Norveç'in başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Oslo",
+      "wrong": [
+        "Stockholm",
+        "Kopenhag",
+        "Helsinki"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Portekiz'in başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Lizbon",
+      "wrong": [
+        "Porto",
+        "Madrid",
+        "Faro"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Güney Kore'nin başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Seul",
+      "wrong": [
+        "Busan",
+        "Pyongyang",
+        "Incheon"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Meksika'nın para birimi nedir?",
+      "difficulty": 2,
+      "correct": "Peso",
+      "wrong": [
+        "Dolar",
+        "Real",
+        "Sol"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Amazon Nehri'nin büyük kısmı hangi ülkededir?",
+      "difficulty": 2,
+      "correct": "Brezilya",
+      "wrong": [
+        "Peru",
+        "Kolombiya",
+        "Venezuela"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Machu Picchu antik kenti hangi ülkededir?",
+      "difficulty": 2,
+      "correct": "Peru",
+      "wrong": [
+        "Bolivya",
+        "Şili",
+        "Ekvador"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Everest Dağı hangi iki ülkenin sınırındadır?",
+      "difficulty": 2,
+      "correct": "Nepal ve Çin",
+      "wrong": [
+        "Hindistan ve Nepal",
+        "Butan ve Çin",
+        "Pakistan ve Çin"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İrlanda'nın başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Dublin",
+      "wrong": [
+        "Belfast",
+        "Cork",
+        "Galway"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Polonya'nın başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Varşova",
+      "wrong": [
+        "Krakov",
+        "Gdansk",
+        "Prag"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İsveç'in para birimi nedir?",
+      "difficulty": 2,
+      "correct": "Kron",
+      "wrong": [
+        "Euro",
+        "Frank",
+        "Mark"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kenya'nın başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Nairobi",
+      "wrong": [
+        "Mombasa",
+        "Addis Ababa",
+        "Kampala"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sahra Çölü hangi kıtadadır?",
+      "difficulty": 2,
+      "correct": "Afrika",
+      "wrong": [
+        "Asya",
+        "Avustralya",
+        "Güney Amerika"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kuzey Kutup Dairesi hangi ülkenin topraklarından geçer?",
+      "difficulty": 2,
+      "correct": "Finlandiya",
+      "wrong": [
+        "Polonya",
+        "İrlanda",
+        "Estonya"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Vietnam'ın başkenti neresidir?",
+      "difficulty": 2,
+      "correct": "Hanoi",
+      "wrong": [
+        "Ho Chi Minh",
+        "Bangkok",
+        "Phnom Penh"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Tango dansının doğduğu ülke hangisidir?",
+      "difficulty": 2,
+      "correct": "Arjantin",
+      "wrong": [
+        "İspanya",
+        "Küba",
+        "Brezilya"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Dünyanın en büyük adası hangisidir?",
+      "difficulty": 2,
+      "correct": "Grönland",
+      "wrong": [
+        "Madagaskar",
+        "Borneo",
+        "Yeni Gine"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Butan'ın başkenti neresidir?",
+      "difficulty": 3,
+      "correct": "Thimphu",
+      "wrong": [
+        "Katmandu",
+        "Dakka",
+        "Lhasa"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Yeni Zelanda'nın başkenti neresidir?",
+      "difficulty": 3,
+      "correct": "Wellington",
+      "wrong": [
+        "Auckland",
+        "Christchurch",
+        "Queenstown"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Nijerya'nın başkenti neresidir?",
+      "difficulty": 3,
+      "correct": "Abuja",
+      "wrong": [
+        "Lagos",
+        "Akra",
+        "Kano"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kanada'nın en kalabalık şehri hangisidir?",
+      "difficulty": 3,
+      "correct": "Toronto",
+      "wrong": [
+        "Montreal",
+        "Vancouver",
+        "Ottawa"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Fas'ın başkenti neresidir?",
+      "difficulty": 3,
+      "correct": "Rabat",
+      "wrong": [
+        "Kazablanka",
+        "Marakeş",
+        "Fes"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bolivya'nın anayasal başkenti neresidir?",
+      "difficulty": 3,
+      "correct": "Sucre",
+      "wrong": [
+        "La Paz",
+        "Santa Cruz",
+        "Cochabamba"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Dünyanın en derin gölü Baykal hangi ülkededir?",
+      "difficulty": 3,
+      "correct": "Rusya",
+      "wrong": [
+        "Moğolistan",
+        "Kazakistan",
+        "Çin"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Toprakları tamamen Avrupa'da olan en büyük yüzölçümlü ülke hangisidir?",
+      "difficulty": 3,
+      "correct": "Ukrayna",
+      "wrong": [
+        "Fransa",
+        "İspanya",
+        "Almanya"
+      ],
+      "explanation": ""
     }
   ]
 }

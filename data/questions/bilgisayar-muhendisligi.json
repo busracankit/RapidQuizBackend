@@ -227,6 +227,446 @@
         "-256"
       ],
       "explanation": ""
+    },
+    {
+      "text": "Klavye ve fare hangi tür donanım birimidir?",
+      "difficulty": 1,
+      "correct": "Giriş birimi",
+      "wrong": [
+        "Çıkış birimi",
+        "Depolama birimi",
+        "İşlem birimi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Monitör hangi tür donanım birimidir?",
+      "difficulty": 1,
+      "correct": "Çıkış birimi",
+      "wrong": [
+        "Giriş birimi",
+        "Depolama birimi",
+        "Ağ birimi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bilgisayardaki tüm bileşenlerin bağlandığı ana devre kartı hangisidir?",
+      "difficulty": 1,
+      "correct": "Anakart",
+      "wrong": [
+        "Ekran kartı",
+        "Ses kartı",
+        "Ağ kartı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Hareketli parçası olmayan, flaş bellek kullanan depolama birimi hangisidir?",
+      "difficulty": 1,
+      "correct": "SSD",
+      "wrong": [
+        "HDD",
+        "DVD",
+        "Disket"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bilgisayar açılınca donanımı başlatan anakarttaki yazılıma ne denir?",
+      "difficulty": 1,
+      "correct": "BIOS/UEFI",
+      "wrong": [
+        "Sürücü",
+        "Tarayıcı",
+        "Antivirüs"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kablosuz yerel ağ teknolojisinin yaygın adı nedir?",
+      "difficulty": 1,
+      "correct": "Wi-Fi",
+      "wrong": [
+        "Ethernet",
+        "USB",
+        "HDMI"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Web sayfası adresinin İngilizce kısaltması hangisidir?",
+      "difficulty": 1,
+      "correct": "URL",
+      "wrong": [
+        "CPU",
+        "RAM",
+        "USB"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Görüntü ve sesi tek kabloyla taşıyan bağlantı standardı hangisidir?",
+      "difficulty": 1,
+      "correct": "HDMI",
+      "wrong": [
+        "VGA",
+        "PS/2",
+        "RJ-45"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ondalık 5 sayısının ikili (binary) karşılığı nedir?",
+      "difficulty": 1,
+      "correct": "101",
+      "wrong": [
+        "110",
+        "111",
+        "100"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Elektrik kesilse de verileri kalıcı olarak saklayan birim hangisidir?",
+      "difficulty": 1,
+      "correct": "SSD veya sabit disk",
+      "wrong": [
+        "RAM",
+        "İşlemci",
+        "Ekran kartı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İşletim sistemi çekirdeğinin İngilizce adı nedir?",
+      "difficulty": 1,
+      "correct": "Kernel",
+      "wrong": [
+        "Shell",
+        "Driver",
+        "Firmware"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ağlar arasında veri paketlerini yönlendiren cihaz hangisidir?",
+      "difficulty": 1,
+      "correct": "Router",
+      "wrong": [
+        "Monitör",
+        "Yazıcı",
+        "Tarayıcı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Android işletim sistemi hangi çekirdek üzerine kuruludur?",
+      "difficulty": 1,
+      "correct": "Linux",
+      "wrong": [
+        "Windows NT",
+        "XNU",
+        "DOS"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Onaltılık (hex) sistemde 'A' harfi kaçı ifade eder?",
+      "difficulty": 1,
+      "correct": "10",
+      "wrong": [
+        "11",
+        "1",
+        "16"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Dijital devrelerde 1 ve 0 üzerinde işlem yapan temel yapı taşına ne denir?",
+      "difficulty": 1,
+      "correct": "Mantık kapısı",
+      "wrong": [
+        "Direnç",
+        "Kondansatör",
+        "Hoparlör"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Web sitesiyle şifreli bağlantı kurulduğunu gösteren protokol hangisidir?",
+      "difficulty": 1,
+      "correct": "HTTPS",
+      "wrong": [
+        "HTTP",
+        "FTP",
+        "Telnet"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "TCP bağlantısı kurulurken yapılan el sıkışma kaç adımlıdır?",
+      "difficulty": 2,
+      "correct": "3",
+      "wrong": [
+        "2",
+        "4",
+        "5"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "SSH'nin varsayılan port numarası nedir?",
+      "difficulty": 2,
+      "correct": "22",
+      "wrong": [
+        "21",
+        "23",
+        "25"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "IPv4 adresleri kaç bit uzunluğundadır?",
+      "difficulty": 2,
+      "correct": "32",
+      "wrong": [
+        "64",
+        "128",
+        "16"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Önbelleğin (cache) temel amacı nedir?",
+      "difficulty": 2,
+      "correct": "Sık kullanılan veriye hızlı erişim",
+      "wrong": [
+        "Kalıcı yedekleme",
+        "Ağ güvenliği",
+        "Enerji tasarrufu"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Intel'in bir çekirdekte iki iş parçacığı yürütme teknolojisinin adı nedir?",
+      "difficulty": 2,
+      "correct": "Hyper-Threading",
+      "wrong": [
+        "Turbo Boost",
+        "Overclock",
+        "Pipeline"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "OSI modelinde IP protokolü hangi katmanda yer alır?",
+      "difficulty": 2,
+      "correct": "Ağ katmanı",
+      "wrong": [
+        "Taşıma katmanı",
+        "Uygulama katmanı",
+        "Fiziksel katman"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Ondalık 255 sayısının onaltılık (hex) karşılığı nedir?",
+      "difficulty": 2,
+      "correct": "FF",
+      "wrong": [
+        "EE",
+        "F0",
+        "100"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İşletim sisteminin belleği sabit boyutlu bloklara bölerek yönetmesine ne denir?",
+      "difficulty": 2,
+      "correct": "Sayfalama (paging)",
+      "wrong": [
+        "Önbellekleme",
+        "Birleştirme",
+        "Derleme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "RISC kısaltmasındaki 'R' harfi neyi ifade eder?",
+      "difficulty": 2,
+      "correct": "Reduced",
+      "wrong": [
+        "Rapid",
+        "Random",
+        "Register"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Apple'ın M serisi işlemcileri hangi komut seti mimarisini kullanır?",
+      "difficulty": 2,
+      "correct": "ARM",
+      "wrong": [
+        "x86",
+        "MIPS",
+        "PowerPC"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "DHCP protokolünün temel görevi nedir?",
+      "difficulty": 2,
+      "correct": "Otomatik IP adresi atamak",
+      "wrong": [
+        "Alan adı çözmek",
+        "E-posta göndermek",
+        "Dosya aktarmak"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Birden fazla diski hız veya yedeklilik için birleştiren teknoloji hangisidir?",
+      "difficulty": 2,
+      "correct": "RAID",
+      "wrong": [
+        "BIOS",
+        "SATA",
+        "DMA"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İşlemcinin saat hızı hangi birimle ölçülür?",
+      "difficulty": 2,
+      "correct": "Hertz",
+      "wrong": [
+        "Bayt",
+        "Watt",
+        "Volt"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "XOR kapısının iki girişi de 1 ise çıkışı nedir?",
+      "difficulty": 2,
+      "correct": "0",
+      "wrong": [
+        "1",
+        "2",
+        "Tanımsız"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "'ping' komutu hangi protokolü kullanır?",
+      "difficulty": 2,
+      "correct": "ICMP",
+      "wrong": [
+        "TCP",
+        "UDP",
+        "FTP"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Çok çekirdekli işlemcide birden çok işin aynı anda yürütülmesine ne denir?",
+      "difficulty": 2,
+      "correct": "Paralel işleme",
+      "wrong": [
+        "Seri işleme",
+        "Sanallaştırma",
+        "Sıkıştırma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Her sürece sırayla eşit zaman dilimi veren CPU zamanlama algoritması hangisidir?",
+      "difficulty": 3,
+      "correct": "Round Robin",
+      "wrong": [
+        "FIFO",
+        "Shortest Job First",
+        "Priority"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Amdahl Yasası neyi açıklar?",
+      "difficulty": 3,
+      "correct": "Paralel hızlanmanın üst sınırını",
+      "wrong": [
+        "Transistör yoğunluğunu",
+        "Bellek kapasitesini",
+        "Ağ bant genişliğini"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sanal adresleri fiziksel adreslere çeviren donanım birimi hangisidir?",
+      "difficulty": 3,
+      "correct": "MMU",
+      "wrong": [
+        "ALU",
+        "DMA",
+        "FPU"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "/24 alt ağ maskesinin ondalık gösterimi nedir?",
+      "difficulty": 3,
+      "correct": "255.255.255.0",
+      "wrong": [
+        "255.255.0.0",
+        "255.255.255.255",
+        "255.0.0.0"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Hamming kodları ne amaçla kullanılır?",
+      "difficulty": 3,
+      "correct": "Hata tespiti ve düzeltme",
+      "wrong": [
+        "Veri sıkıştırma",
+        "Şifreleme",
+        "Yönlendirme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "İstenen verinin önbellekte bulunamamasına ne denir?",
+      "difficulty": 3,
+      "correct": "Cache miss",
+      "wrong": [
+        "Cache hit",
+        "Deadlock",
+        "Interrupt"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Dijital devrelerde 1 bitlik bilgiyi saklayan temel bellek elemanı hangisidir?",
+      "difficulty": 3,
+      "correct": "Flip-flop",
+      "wrong": [
+        "Çoklayıcı",
+        "Kod çözücü",
+        "Toplayıcı"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Boru hattında bir komutun önceki komutun sonucunu beklemesine ne denir?",
+      "difficulty": 3,
+      "correct": "Veri tehlikesi (data hazard)",
+      "wrong": [
+        "Önbellek isabeti",
+        "Kesme",
+        "Bağlam değişimi"
+      ],
+      "explanation": ""
     }
   ]
 }

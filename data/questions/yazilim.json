@@ -227,6 +227,446 @@
         "Generic Iterator Lock"
       ],
       "explanation": ""
+    },
+    {
+      "text": "Python'da yorum satırı hangi karakterle başlar?",
+      "difficulty": 1,
+      "correct": "#",
+      "wrong": [
+        "//",
+        "--",
+        "/*"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kaynak kodu bir kerede makine koduna çeviren programa ne denir?",
+      "difficulty": 1,
+      "correct": "Derleyici",
+      "wrong": [
+        "Hata ayıklayıcı",
+        "Metin editörü",
+        "Paket yöneticisi"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Git'te uzak depodaki değişiklikleri çekip yerel dala birleştiren komut hangisidir?",
+      "difficulty": 1,
+      "correct": "git pull",
+      "wrong": [
+        "git push",
+        "git commit",
+        "git init"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "HTTP'de 'sunucu iç hatası' durum kodu hangisidir?",
+      "difficulty": 1,
+      "correct": "500",
+      "wrong": [
+        "200",
+        "301",
+        "404"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Java programları hangi sanal makinede çalışır?",
+      "difficulty": 1,
+      "correct": "JVM",
+      "wrong": [
+        "CLR",
+        "V8",
+        "Zend"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Python'da bir listenin eleman sayısını veren fonksiyon hangisidir?",
+      "difficulty": 1,
+      "correct": "len()",
+      "wrong": [
+        "size()",
+        "count()",
+        "length()"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Döngüyü tamamen sonlandıran anahtar kelime hangisidir?",
+      "difficulty": 1,
+      "correct": "break",
+      "wrong": [
+        "continue",
+        "pass",
+        "yield"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Açık kaynak projelerin en çok barındırıldığı platform hangisidir?",
+      "difficulty": 1,
+      "correct": "GitHub",
+      "wrong": [
+        "Stack Overflow",
+        "LinkedIn",
+        "Figma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "HTML'de kullanıcıdan veri toplayıp gönderen kapsayıcı etiket hangisidir?",
+      "difficulty": 1,
+      "correct": "<form>",
+      "wrong": [
+        "<div>",
+        "<table>",
+        "<span>"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Çoğu programlama dilinde dizinin ilk elemanının indeksi kaçtır?",
+      "difficulty": 1,
+      "correct": "0",
+      "wrong": [
+        "1",
+        "-1",
+        "10"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir uygulamanın kullanıcının gördüğü arayüz tarafına ne denir?",
+      "difficulty": 1,
+      "correct": "Frontend",
+      "wrong": [
+        "Backend",
+        "Veritabanı",
+        "Sunucu"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Python'da fonksiyon hangi anahtar kelimeyle tanımlanır?",
+      "difficulty": 1,
+      "correct": "def",
+      "wrong": [
+        "function",
+        "func",
+        "fn"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "CSS'te yazı rengini değiştiren özellik hangisidir?",
+      "difficulty": 1,
+      "correct": "color",
+      "wrong": [
+        "font-color",
+        "text-color",
+        "background"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kodun küçük parçalarını otomatik doğrulayan testlere ne denir?",
+      "difficulty": 1,
+      "correct": "Birim testi",
+      "wrong": [
+        "Kullanıcı anketi",
+        "Kod incelemesi",
+        "Sürüm notu"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Hangisi bir veritabanı yönetim sistemidir?",
+      "difficulty": 1,
+      "correct": "PostgreSQL",
+      "wrong": [
+        "React",
+        "Docker",
+        "Nginx"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Uygulamayı bağımlılıklarıyla birlikte kapsayıcıda çalıştıran araç hangisidir?",
+      "difficulty": 1,
+      "correct": "Docker",
+      "wrong": [
+        "Git",
+        "Jira",
+        "Figma"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Kuyruk (queue) veri yapısı hangi prensiple çalışır?",
+      "difficulty": 2,
+      "correct": "FIFO",
+      "wrong": [
+        "LIFO",
+        "Rastgele erişim",
+        "Öncelik sırası"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Hash tablosunda ortalama arama süresi nedir?",
+      "difficulty": 2,
+      "correct": "O(1)",
+      "wrong": [
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "HTTP 401 durum kodu neyi ifade eder?",
+      "difficulty": 2,
+      "correct": "Kimlik doğrulama gerekli",
+      "wrong": [
+        "Kaynak bulunamadı",
+        "Sunucu hatası",
+        "Kalıcı yönlendirme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Python'da 7 // 2 ifadesinin sonucu nedir?",
+      "difficulty": 2,
+      "correct": "3",
+      "wrong": [
+        "3.5",
+        "4",
+        "1"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Git'te yeni bir dal oluşturup ona geçen komut hangisidir?",
+      "difficulty": 2,
+      "correct": "git checkout -b",
+      "wrong": [
+        "git merge",
+        "git stash",
+        "git rebase"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir fonksiyonun kendini çağırmasına ne denir?",
+      "difficulty": 2,
+      "correct": "Özyineleme (recursion)",
+      "wrong": [
+        "Kalıtım",
+        "Kapsülleme",
+        "Aşırı yükleme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "SQL'de tablodan satır silen komut hangisidir?",
+      "difficulty": 2,
+      "correct": "DELETE",
+      "wrong": [
+        "DROP",
+        "REMOVE",
+        "ERASE"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "REST'te bir kaynağı tamamen değiştirmek için hangi HTTP metodu kullanılır?",
+      "difficulty": 2,
+      "correct": "PUT",
+      "wrong": [
+        "GET",
+        "OPTIONS",
+        "HEAD"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Python dilinin yaratıcısı kimdir?",
+      "difficulty": 2,
+      "correct": "Guido van Rossum",
+      "wrong": [
+        "James Gosling",
+        "Bjarne Stroustrup",
+        "Brendan Eich"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "JavaScript dilini ilk geliştiren kişi kimdir?",
+      "difficulty": 2,
+      "correct": "Brendan Eich",
+      "wrong": [
+        "Guido van Rossum",
+        "James Gosling",
+        "Dennis Ritchie"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "C programlama dilini geliştiren bilgisayar bilimci kimdir?",
+      "difficulty": 2,
+      "correct": "Dennis Ritchie",
+      "wrong": [
+        "Bjarne Stroustrup",
+        "Niklaus Wirth",
+        "John McCarthy"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bağlı listede (linked list) indeksle erişimin karmaşıklığı nedir?",
+      "difficulty": 2,
+      "correct": "O(n)",
+      "wrong": [
+        "O(1)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Nesnenin iç verisini dışarıdan gizleme ilkesine ne denir?",
+      "difficulty": 2,
+      "correct": "Kapsülleme",
+      "wrong": [
+        "Kalıtım",
+        "Çok biçimlilik",
+        "Özyineleme"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Sürekli entegrasyonun İngilizce kısaltması hangisidir?",
+      "difficulty": 2,
+      "correct": "CI",
+      "wrong": [
+        "CD",
+        "IDE",
+        "API"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "JSON'da anahtarlar hangi tırnakla yazılmalıdır?",
+      "difficulty": 2,
+      "correct": "Çift tırnak",
+      "wrong": [
+        "Tek tırnak",
+        "Tırnaksız",
+        "Ters tırnak"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Birleştirmeli sıralamanın (merge sort) zaman karmaşıklığı nedir?",
+      "difficulty": 2,
+      "correct": "O(n log n)",
+      "wrong": [
+        "O(n²)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "CAP teoremindeki 'P' harfi neyi ifade eder?",
+      "difficulty": 3,
+      "correct": "Bölünme toleransı",
+      "wrong": [
+        "Performans",
+        "Kalıcılık",
+        "Öncelik"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Python'da 'is' ile '==' arasındaki fark nedir?",
+      "difficulty": 3,
+      "correct": "is kimliği, == değeri karşılaştırır",
+      "wrong": [
+        "is değeri, == kimliği karşılaştırır",
+        "İkisi tamamen aynıdır",
+        "is yalnızca sayılar içindir"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Veritabanlarında ACID'deki 'I' harfi neyi ifade eder?",
+      "difficulty": 3,
+      "correct": "Isolation (yalıtım)",
+      "wrong": [
+        "Integrity",
+        "Indexing",
+        "Immutability"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Önce tüm komşuları, sonra onların komşularını gezen graf araması hangisidir?",
+      "difficulty": 3,
+      "correct": "Genişlik öncelikli (BFS)",
+      "wrong": [
+        "Derinlik öncelikli (DFS)",
+        "İkili arama",
+        "Doğrusal arama"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Git'te dalın commit'lerini başka bir dalın ucuna taşıyarak geçmişi yeniden yazan komut?",
+      "difficulty": 3,
+      "correct": "git rebase",
+      "wrong": [
+        "git merge",
+        "git revert",
+        "git tag"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Bir sınıftan yalnızca tek bir örnek oluşturulmasını garanti eden tasarım deseni hangisidir?",
+      "difficulty": 3,
+      "correct": "Singleton",
+      "wrong": [
+        "Factory",
+        "Observer",
+        "Adapter"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Dinamik programlamada alt problem sonuçlarını saklama tekniğine ne denir?",
+      "difficulty": 3,
+      "correct": "Memoization",
+      "wrong": [
+        "Serialization",
+        "Normalization",
+        "Virtualization"
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Unicode'un en yaygın kullanılan değişken uzunluklu kodlaması hangisidir?",
+      "difficulty": 3,
+      "correct": "UTF-8",
+      "wrong": [
+        "ASCII",
+        "UTF-32",
+        "Latin-1"
+      ],
+      "explanation": ""
     }
   ]
 }

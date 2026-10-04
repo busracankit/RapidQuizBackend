@@ -77,7 +77,7 @@ apps/api_tests/   uçtan uca API testleri
 - **Doğru şık değiştirme (admin):** Kısıt `choice_single_correct_per_question` partial unique index'tir (deferrable olamaz).
   Admin, kayıt sırasını "önce silinenler → is_correct=False → doğru şık" yapar; tek-form kısıt kontrolü kapalıdır,
   kural formset seviyesinde (tam 4 şık, tam 1 doğru, farklı metinler) doğrulanır.
-- **Sorular:** Faz 1'de kategori başına 20 soru (8 kolay / 8 orta / 4 zor); soru ≤120, şık ≤40 karakter.
+- **Sorular:** kategori başına 60 soru (24 kolay / 24 orta / 12 zor; Faz 3'te 20'den çıkarıldı); soru ≤120, şık ≤40 karakter.
   Zorlukta eksik varsa oturum diğer zorluklardan tamamlar; toplam < 20 ise 409 `not_enough_questions`.
 - **Şık kimlikleri (dokümandan sapma):** API'de `choices[].id`, `choice_id`, `correct_choice_id` oturuma özel
   **1–4** değerleridir (`SessionQuestion.choice_order` sırası + 1). DB id'leri gönderilmez, çünkü yükleyici doğru
@@ -115,4 +115,4 @@ Hata: `{"error": {"code", "message", "details"?}}`. Oturum header'ı: `X-Session
 - [x] v1 endpointleri, hata formatı, throttling, CORS
 - [x] drf-spectacular şeması + Swagger UI (`drf-spectacular-sidecar` ile CDN'siz)
 
-Faz 1 tamam. Sırada Faz 2 (frontend, `../RapidQuizFrontend`). Faz 3'te: CI, deploy, soruları 60'a çıkarma.
+Faz 1 ve 2 tamam. Faz 3: CI (`.github/workflows/ci.yml`), DigitalOcean spec + `docs/deploy.md`, 5×60 soru hazır; yayın adımları kullanıcıyla yapılıyor.
