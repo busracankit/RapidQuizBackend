@@ -8,7 +8,14 @@ Rapid Quiz'in Django + DRF REST API'si. Web (Vue) ve mobil istemciler aynı `/ap
 ## Git
 
 - Remote: `origin` → https://github.com/busracankit/RapidQuizBackend.git (frontend: `RapidQuizFrontend.git`), dal `main`.
-- Faz 3'e kadar yalnızca yerel commit; push Faz 3 ile başlar (DigitalOcean `main`'e push'ta deploy eder).
+- `main`'e push → GitHub Actions CI (`.github/workflows/ci.yml`) ve DigitalOcean otomatik deploy.
+
+## Deploy (DigitalOcean App Platform)
+
+Backend + frontend **tek uygulama** (`.do/app.yaml`): `/api`, `/admin`, `/static` → `api` (Dockerfile), geri kalan
+→ `web` (frontend reposundan statik site). Aynı köken → CORS yok. Managed PostgreSQL 18 kümesi `rapid-quiz-db`.
+`migrate` PRE_DEPLOY job'ı `migrate && load_questions` çalıştırır. Adım adım kurulum: `docs/deploy.md`.
+`DJANGO_SECRET_KEY` repoya yazılmaz (spec'te `__DJANGO_SECRET_KEY__` yer tutucusu).
 
 ## Teknoloji
 
