@@ -1,5 +1,8 @@
 # Rapid Quiz — DigitalOcean'a yayın
 
+> **Not (4 Ekim 2026):** vf kurulumu doctl yerine **DO panelinden (tarayıcı) manuel** yapacak. Aşağıdaki
+> doctl adımları alternatif/referanstır; panelde aynı bileşen ve değerler kullanılır (bkz. `CLAUDE.md` › Deploy).
+
 Backend (Django) ve frontend (Vue) **tek bir App Platform uygulamasında** çalışır:
 
 | Yol | Bileşen |

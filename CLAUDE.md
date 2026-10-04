@@ -10,12 +10,25 @@ Rapid Quiz'in Django + DRF REST API'si. Web (Vue) ve mobil istemciler aynı `/ap
 - Remote: `origin` → https://github.com/busracankit/RapidQuizBackend.git (frontend: `RapidQuizFrontend.git`), dal `main`.
 - `main`'e push → GitHub Actions CI (`.github/workflows/ci.yml`) ve DigitalOcean otomatik deploy.
 
+## Durum (4 Ekim 2026)
+
+Faz 1 ve 2 tamam; Faz 3 kodu (CI, spec, 5×60 soru) hazır ama **henüz push/yayın yapılmadı**. vf yayını
+**DO panelinden (tarayıcı) manuel** yapmaya karar verdi; doctl kullanılmayacak. Sonraki oturumda panelde
+sıfırdan kurulum adım adım anlatılacak (bileşenler, ayarlar ve değerler aşağıda ve `.do/app.yaml`'da).
+
 ## Deploy (DigitalOcean App Platform)
 
 Backend + frontend **tek uygulama** (`.do/app.yaml`): `/api`, `/admin`, `/static` → `api` (Dockerfile), geri kalan
 → `web` (frontend reposundan statik site). Aynı köken → CORS yok. Managed PostgreSQL 18 kümesi `rapid-quiz-db`.
 `migrate` PRE_DEPLOY job'ı `migrate && load_questions` çalıştırır. Adım adım kurulum: `docs/deploy.md`.
-`DJANGO_SECRET_KEY` repoya yazılmaz (spec'te `__DJANGO_SECRET_KEY__` yer tutucusu).
+`DJANGO_SECRET_KEY` repoya yazılmaz (spec'te `__DJANGO_SECRET_KEY__` yer tutucusu; panelde "Encrypt" işaretli env).
+
+Panelde kurarken spec'teki değerler birebir kullanılır: `api` (Dockerfile, port 8080, health `/api/v1/health/`,
+route'lar `/api` `/admin` `/static` + preserve path prefix), `web` statik site (`npm ci && npm run build`, `dist`,
+catchall `index.html`, route `/`), `migrate` (Before every deploy), `cleanup-sessions` (Scheduled, `0 4 * * *`,
+Europe/Istanbul), DB `rapid-quiz-db` (PG 18, fra1) + Trusted Sources, env'ler: `DJANGO_SETTINGS_MODULE`,
+`DJANGO_SECRET_KEY`, `DATABASE_URL=${db.DATABASE_URL}`, `DJANGO_ALLOWED_HOSTS=${APP_DOMAIN}`,
+`CSRF_TRUSTED_ORIGINS=https://${APP_DOMAIN}`, `WEB_CONCURRENCY=3`.
 
 ## Teknoloji
 
