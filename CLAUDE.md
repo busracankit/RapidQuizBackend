@@ -10,11 +10,53 @@ Rapid Quiz'in Django + DRF REST API'si. Web (Vue) ve mobil istemciler aynı `/ap
 - Remote: `origin` → https://github.com/busracankit/RapidQuizBackend.git (frontend: `RapidQuizFrontend.git`), dal `main`.
 - `main`'e push → GitHub Actions CI (`.github/workflows/ci.yml`) ve DigitalOcean otomatik deploy.
 
-## Durum (4 Ekim 2026)
+## Durum (5 Ekim 2026)
 
-Faz 1 ve 2 tamam; Faz 3 kodu (CI, spec, 5×60 soru) hazır ama **henüz push/yayın yapılmadı**. vf yayını
-**DO panelinden (tarayıcı) manuel** yapmaya karar verdi; doctl kullanılmayacak. Sonraki oturumda panelde
-sıfırdan kurulum adım adım anlatılacak (bileşenler, ayarlar ve değerler aşağıda ve `.do/app.yaml`'da).
+Faz 1, 2 ve 3 tamam. **Canlıya alındı** (DO panelinden manuel): `https://starfish-app-yuzxi.ondigitalocean.app`
+(öğrenme amaçlı; kaynaklar maliyet nedeniyle silinebilir — silindiyse yeniden kurulum için `docs/deploy.md` ›
+"Panelden kurulum"). Backend ve frontend CI'ı yeşil. Sıradaki: Faz 4 (mobil, iOS/Android).
+Commit yazarı `Büşra Cankit <cankitbusra@gmail.com>` (geçmiş bu kimliğe göre yeniden yazıldı).
+
+## Deploy — panelden kurulumda öğrenilenler (5 Ekim 2026)
+
+Gerçek kurulum DO panelinden (doctl'siz) yapıldı ve çalıştı. Uygulama adı `starfish-app` (DO'nun verdiği ad),
+adres `https://starfish-app-yuzxi.ondigitalocean.app` (**yuzxi** — içinde x var), bölge FRA1, veritabanı kümesi
+`db-pgsql-rapidquiz`. Bileşenler: `api` (Dockerfile), frontend statik sitesi, `migrate` ve `cleanup-sessions` job'ları.
+
+1. İki repoyu push et, GitHub Actions yeşil olsun. DO'ya GitHub yetkisini iki repo için ver.
+2. Managed PostgreSQL oluştur (Databases › Create) ya da mevcut olanı kullan.
+3. Apps › Create App › backend repo (`main`) → Dockerfile algılanır. HTTP port `8080`, health check `/api/v1/health/`.
+4. **Ortam değişkenleri** (kritik; eksikse gunicorn worker'ı açılışta ölür):
+   - App seviyesi: `DJANGO_SECRET_KEY` (**Encrypt**, `python3 -c "import secrets; print(secrets.token_urlsafe(50))"`
+     ile üret, repoya yazma), `DJANGO_SETTINGS_MODULE=config.settings.prod`.
+   - `api` bileşeni: `DATABASE_URL`, `DJANGO_ALLOWED_HOSTS=<alan adı, https:// olmadan>`,
+     `CSRF_TRUSTED_ORIGINS=https://<alan adı>`, `WEB_CONCURRENCY=3`.
+   - `DATABASE_URL` değerini elle yazma: önce veritabanını app'e **Add Resource › Database** ile ekle, sonra değer
+     kutusuna `${` yaz, açılan listeden veritabanı bileşenini seç, `.` yazıp `DATABASE_URL`'yi seç →
+     `${db-pgsql-rapidquiz.DATABASE_URL}`. Veritabanı app'e eklenmeden bu ifade "not a valid variable" der.
+   - `${APP_DOMAIN}` app seviyesinde geçersizdir; alan adını doğrudan yazmak daha güvenli.
+   - Frontend'e **hiçbir** ortam değişkeni verme (`VITE_API_BASE_URL` boş kalmalı → istemci `/api/v1`'e gider).
+5. Frontend: Add components › Create resources from source code › frontend repo → Static Site, build
+   `npm ci && npm run build`, output directory `dist`, route `/`. Sonra Settings › static site › **Custom Pages ›
+   Catchall = `index.html`** (Vue Router history; yoksa alt sayfalarda yenileyince 404).
+6. **Route'lar** (Settings › Routing): `api` için `/api`, `/admin`, `/static`; üçünde de **Preserve Full Path**.
+   **Trim Prefix seçilirse** Django `/v1/categories/` görür ve düz "Not Found" döner (en sık hata). `/` frontend'de.
+7. Job'lar (Add components › Create resources from source code › backend repo › Resource type **Job**):
+   `migrate` (trigger: before every deployment) →
+   `sh -c "python manage.py migrate --noinput && python manage.py load_questions"`;
+   `cleanup-sessions` (trigger: On a schedule, `0 4 * * *`, Europe/Istanbul) → `python manage.py cleanup_sessions`.
+   Her job'a `DATABASE_URL` aynı `${…}` önerisiyle verilir.
+8. Doğrulama: `/api/v1/health/` → `{"status":"ok"}`, `/api/v1/categories/` → 5 kategori, ana sayfa, bir tam oyun,
+   skor kaydı + skor tablosu, `/admin/` (CSS'li açılmalı). `createsuperuser` için `api` Console'u kullanılır.
+
+**Sık hatalar:** `KeyError: 'DJANGO_SECRET_KEY'` / `Set the DATABASE_URL` → değişken ilgili bileşene ulaşmıyor;
+`Bad Request (400)` → `DJANGO_ALLOWED_HOSTS` yanlış (yazım!); `Not Found` (Django) → Trim Prefix;
+`Kategoriler yüklenemedi` → `/api` route'u backend'e gitmiyor. Tarayıcıda API JSON'u Safari'de bozuk harfli görünür
+(charset başlığı yok); uygulama içinde (axios) sorun yoktur.
+
+**Maliyet:** kaynaklar açık kaldığı sürece saatlik faturalanır, trafikten bağımsız: `api` (1 vCPU/1 GB) ~12 $/ay,
+Managed PostgreSQL ~15 $/ay, statik site ücretsiz → ~1 $/gün. **Silmek için** uygulamayı (Apps › Destroy) **ve ayrıca**
+veritabanını (Databases › Destroy) sil; veritabanı ayrı bir kaynaktır.
 
 ## Deploy (DigitalOcean App Platform)
 
@@ -128,4 +170,4 @@ Hata: `{"error": {"code", "message", "details"?}}`. Oturum header'ı: `X-Session
 - [x] v1 endpointleri, hata formatı, throttling, CORS
 - [x] drf-spectacular şeması + Swagger UI (`drf-spectacular-sidecar` ile CDN'siz)
 
-Faz 1 ve 2 tamam. Faz 3: CI (`.github/workflows/ci.yml`), DigitalOcean spec + `docs/deploy.md`, 5×60 soru hazır; yayın adımları kullanıcıyla yapılıyor.
+Faz 1, 2 ve 3 tamam (CI, DigitalOcean yayını, 5×60 soru). Bkz. `docs/deploy.md` › Panelden kurulum.
