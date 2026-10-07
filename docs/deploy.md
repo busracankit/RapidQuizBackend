@@ -1,13 +1,15 @@
 # Rapid Quiz — DigitalOcean'a yayın
 
+> **Durum (7 Ekim 2026):** Uygulama şu an **yayında değil.** Aşağıdaki kurulum Ekim 2026'da denendi ve çalıştı,
+> ardından kaynaklar maliyet nedeniyle silindi. Bu dosya yeniden kurulum rehberidir.
+
 > **Not:** Kurulum 5 Ekim 2026'da doctl yerine **DO panelinden** yapıldı; güncel akış hemen aşağıdaki
 > "Panelden kurulum" bölümünde. Sonraki doctl adımları alternatif/referanstır.
 
 ## Panelden kurulum — 5 Ekim 2026'da uygulanan akış
 
-Gerçek kurulum DO panelinden (doctl'siz) yapıldı ve çalıştı. Uygulama adı `starfish-app` (DO'nun verdiği ad),
-adres `https://starfish-app-yuzxi.ondigitalocean.app` (**yuzxi** — içinde x var), bölge FRA1, veritabanı kümesi
-`db-pgsql-rapidquiz`. Bileşenler: `api` (Dockerfile), frontend statik sitesi, `migrate` ve `cleanup-sessions` job'ları.
+Gerçek kurulum DO panelinden (doctl'siz) yapıldı ve çalıştı (şu an kapalı). Uygulama adı DO'nun verdiği ad,
+adres `https://<app-adı>.ondigitalocean.app`, bölge FRA1, veritabanı kümesi `db-pgsql-rapidquiz`. Bileşenler: `api` (Dockerfile), frontend statik sitesi, `migrate` ve `cleanup-sessions` job'ları.
 
 1. İki repoyu push et, GitHub Actions yeşil olsun. DO'ya GitHub yetkisini iki repo için ver.
 2. Managed PostgreSQL oluştur (Databases › Create) ya da mevcut olanı kullan.

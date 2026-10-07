@@ -10,18 +10,17 @@ Rapid Quiz'in Django + DRF REST API'si. Web (Vue) ve mobil istemciler aynı `/ap
 - Remote: `origin` → https://github.com/busracankit/RapidQuizBackend.git (frontend: `RapidQuizFrontend.git`), dal `main`.
 - `main`'e push → GitHub Actions CI (`.github/workflows/ci.yml`) ve DigitalOcean otomatik deploy.
 
-## Durum (5 Ekim 2026)
+## Durum (7 Ekim 2026)
 
-Faz 1, 2 ve 3 tamam. **Canlıya alındı** (DO panelinden manuel): `https://starfish-app-yuzxi.ondigitalocean.app`
-(öğrenme amaçlı; kaynaklar maliyet nedeniyle silinebilir — silindiyse yeniden kurulum için `docs/deploy.md` ›
-"Panelden kurulum"). Backend ve frontend CI'ı yeşil. Sıradaki: Faz 4 (mobil, iOS/Android).
+Faz 1, 2 ve 3 tamam. Ekim 2026'da DigitalOcean App Platform'a öğrenme amaçlı kuruldu ve çalıştı, ardından
+maliyet nedeniyle **kapatıldı: şu an yayında bir sunucu yok.** `rapidap.co` alan adı planlanmıştı, alınmadı.
+Yeniden kurulum: `docs/deploy.md` › "Panelden kurulum". Backend ve frontend CI'ı yeşil. Sıradaki: Faz 4 (mobil).
 Commit yazarı `Büşra Cankit <cankitbusra@gmail.com>` (geçmiş bu kimliğe göre yeniden yazıldı).
 
 ## Deploy — panelden kurulumda öğrenilenler (5 Ekim 2026)
 
-Gerçek kurulum DO panelinden (doctl'siz) yapıldı ve çalıştı. Uygulama adı `starfish-app` (DO'nun verdiği ad),
-adres `https://starfish-app-yuzxi.ondigitalocean.app` (**yuzxi** — içinde x var), bölge FRA1, veritabanı kümesi
-`db-pgsql-rapidquiz`. Bileşenler: `api` (Dockerfile), frontend statik sitesi, `migrate` ve `cleanup-sessions` job'ları.
+Gerçek kurulum DO panelinden (doctl'siz) yapıldı ve çalıştı (şu an kapalı). Uygulama adı DO'nun verdiği ad,
+adres `https://<app-adı>.ondigitalocean.app`, bölge FRA1, veritabanı kümesi `db-pgsql-rapidquiz`. Bileşenler: `api` (Dockerfile), frontend statik sitesi, `migrate` ve `cleanup-sessions` job'ları.
 
 1. İki repoyu push et, GitHub Actions yeşil olsun. DO'ya GitHub yetkisini iki repo için ver.
 2. Managed PostgreSQL oluştur (Databases › Create) ya da mevcut olanı kullan.
